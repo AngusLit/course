@@ -6,6 +6,10 @@
     align-self: center;
 }
 
+h1, h2, h3, p, img {
+    padding: 0px 16px;
+}
+
 h1 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -34,18 +38,21 @@ p.note::before {
     content: "Please note: ";
     display: block;
     font-weight: 600;
+    margin-left: -18px;
+    line-height: 250%;
 }
 
 p.note {
-    background: #d4d4d4;
-    padding: 32px;
+    background: #eee;
+    padding: 16px 36px 24px 36px;
+    line-height: 125%;
     margin: 32px;
-    width: fit-content;
-    border-radius: 8px;
+    width: auto;
+    border-left: 3px solid black;
 }
 
 img.full{
-    width: 100%;
+    width: calc(100% - 32px);
     object-fit: cover;
 }
 
@@ -67,40 +74,6 @@ img.right {
     margin-right: 0px;
 }
 
-.url::before{
-    display: block;
-    width: 100%;
-    content: "Go exploring";
-    font-weight: 300;
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-
-.url {
-    background: #d4d4d4;
-    padding: 32px;
-    margin: 32px;
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border-radius: 8px;
-}
-
-.url svg:first-of-type {
-    margin-bottom: auto;
-    margin-right: 32px;
-}
-
-.url svg:last-of-type {
-    padding-left: 4px;
-}
-
-.url a {
-    display: flex;
-    padding-left: 4px;
-}
-
 .timer {
     background: #d4d4d4;
     padding: 32px;
@@ -109,7 +82,6 @@ img.right {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border-radius: 8px;
 }
 
 .timer svg:first-of-type {
@@ -158,4 +130,86 @@ img.right {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+.url {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: auto;
+    background: #eee;
+    padding: 16px 24px 24px 18px;
+    line-height: 125%;
+    margin: 16px;
+    border-left: 3px solid black;
+}
+
+.url::before {
+    width: 100%;
+    content: "Go exploring";
+    display: block;
+    font-weight: 600;
+    line-height: 250%;
+}
+
+.url__link {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.url__link p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 125%;
+    padding: 0;
+}
+
+.url svg:first-of-type {
+    margin-bottom: auto;
+    margin-right: 32px;
+}
+
+.url a {
+    display: flex;
+    width: fit-content;
+    padding-left: 4px;
+    color: #0088FF;
+    text-decoration: none;
+}
+
+.code__line, .code__line * {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+    background: black;
+    margin: 0px 16px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote__headshot {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.quote__text {
+    padding: 0px 64px;
+    line-height: 200%;
+    letter-spacing: 0.015em;
+    font-style: italic;
+}
+
+.quote__cite {
+    align-self: flex-end;
 }

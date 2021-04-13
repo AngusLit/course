@@ -2,6 +2,10 @@ import { Component } from 'react';
 import "../Slides/Slides.css"
 
 export default class Likert extends Component {
+    state = {
+        selection: null
+    }
+
     render( ) {
         var arr = [];
         for (let i = 1; i <= this.props.count; i++) {
