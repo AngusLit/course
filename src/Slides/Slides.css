@@ -1,0 +1,161 @@
+.slide {
+    overflow-y: auto;
+    margin: 32px 8px;
+    width: 100%;
+    max-width: 1080px;
+    align-self: center;
+}
+
+h1 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+h2 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+p {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 175%;
+}
+
+p.note::before {
+    content: "Please note: ";
+    display: block;
+    font-weight: 600;
+}
+
+p.note {
+    background: #d4d4d4;
+    padding: 32px;
+    margin: 32px;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+img.full{
+    width: 100%;
+    object-fit: cover;
+}
+
+img.left, img.right {
+    width: 45%;
+    min-width: 360px;
+    object-fit: cover;
+}
+
+img.left {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+img.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.url::before{
+    display: block;
+    width: 100%;
+    content: "Go exploring";
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.url {
+    background: #d4d4d4;
+    padding: 32px;
+    margin: 32px;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.url svg:first-of-type {
+    margin-bottom: auto;
+    margin-right: 32px;
+}
+
+.url svg:last-of-type {
+    padding-left: 4px;
+}
+
+.url a {
+    display: flex;
+    padding-left: 4px;
+}
+
+.timer {
+    background: #d4d4d4;
+    padding: 32px;
+    margin: 32px;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.timer svg:first-of-type {
+    margin-right: 32px;
+}
+
+.likert {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.likert__question {
+    width: 100%;
+}
+
+.likert__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72px;
+}
+
+.likert__option input {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    margin-left: 48px;
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Slides from "./Slides/index.js"
 
-export default App;
+export default class App extends Component {
+    state = {
+        index: 0,
+        min: 0,
+        max: 5  
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <Slides index={this.state.index} />
+                <section className="app-nav">
+                    <button
+                        className="app-nav__button"
+                        onClick={
+                            ( ) => {
+                                if ( this.state.index > this.state.min ) {
+                                    this.setState({
+                                        index: this.state.index - 1
+                                    })
+                                }
+                            }
+                        }
+                    >
+                        BACK
+				    </button>
+                    <button
+                        className="app-nav__button"
+                        onClick={
+                            ( ) => {
+                                if ( this.state.index < this.state.max ) {
+                                    this.setState({
+                                        index: this.state.index + 1
+                                    })
+                                }
+                            }
+                        }
+                    >
+                        NEXT
+				    </button>
+                </section>
+            </div>
+        );
+    }
+}
