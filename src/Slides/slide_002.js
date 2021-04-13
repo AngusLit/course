@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Heading from '../Comps/Heading';
-import Likert from '../Comps/Likert';
+import Likert from '../Comps/Likert/Likert';
 
 export default class App extends Component {
     render() {
