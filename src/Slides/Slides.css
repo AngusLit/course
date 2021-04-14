@@ -1,6 +1,6 @@
 .slide {
     overflow-y: auto;
-    margin: 32px 8px;
+    margin: 8px 32px 64px;
     width: 100%;
     max-width: 1080px;
     align-self: center;
@@ -12,6 +12,7 @@ h1, h2, h3, p, img {
 
 li {
     margin-left: 16px;
+    padding-bottom: 6pt;
 }
 
 h1 {
@@ -91,8 +92,6 @@ img.right {
 .timer svg:first-of-type {
     margin-right: 32px;
 }
-
-
 
 ::-webkit-scrollbar {
     margin-left: 48px;
@@ -187,8 +186,13 @@ img.right {
     border-radius: 50%;
 }
 
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
 .quote__text {
     padding: 0px 64px;
+    width: 480px;
     line-height: 200%;
     letter-spacing: 0.015em;
     font-style: italic;

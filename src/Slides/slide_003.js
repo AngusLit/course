@@ -9,28 +9,26 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Slide 3 heading level 1"
+                    text={`Why Learn R?`}
                 />
 				<Paragraph
-                    text="Elementum eu facilisis sed odio morbi quis. Ornare arcu odio ut sem nulla pharetra. Porttitor leo a diam sollicitudin tempor id eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Orci ac auctor augue mauris augue neque gravida in fermentum. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Eget nullam non nisi est sit amet facilisis magna etiam. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Quam id leo in vitae turpis. Est pellentesque elit ullamcorper dignissim cras tincidunt. At auctor urna nunc id cursus metus. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Non tellus orci ac auctor augue. Pulvinar etiam non quam lacus suspendisse faucibus."
+                    text={`There are 3 major reasons to learn about R:`}
                 />
-                <Paragraph
-                    type="note"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                />
-                <Heading
-                    component="h2"
-                    text="Heading level 2"
-                />
-                <Paragraph
-                    text="Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida:"
-                />
-                <List text={[
-                    "Mauris a diam maecenas sed enim ut.",
-                    "Elementum eu facilisis sed odio morbi quis.",
-                    "In egestas erat imperdiet sed euismod.",
-                    "Quam id leo in vitae turpis.",
-                ]} />
+                <List text={ [
+                    `First, in the Data Science job market, R is one of the most requested programming languages.`,
+                    [
+                        `Let’s you remember previous work in the same field of data analysis more easily than a point-and-click interface.`,
+                        `Makes it easier for you to verify research findings and check your work for errors – the mantra of "Make sure your work is reproducible!" is popular amongst gurus of the R language.`
+                    ],
+                    `R is common.`,
+                    [
+                        `More than 10,000 add-on packages`,
+                        `95,000+ members of LinkedIn's R group`,
+                        `400+ R Meetup groups currently in operation.`,
+                        `Used by Facebook and Google for evaluating user actions and enhancing online advertising's effectiveness.`
+                    ],
+                    `R is free, open source, strong, and easy-to-use.`
+                ] } />
             </section>
         );
     }

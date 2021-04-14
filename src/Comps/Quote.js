@@ -10,9 +10,9 @@ export default class Quote extends Component {
                     alt={ this.props.textAlternative }
                     src={ this.props.source }
                 />
-                <p className="quote__text">
+                <q className="quote__text">
                     { this.props.quote }
-                </p>
+                </q>
                 <p className="quote__cite">
                     { this.props.citation }
                 </p>

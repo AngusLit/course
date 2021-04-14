@@ -11,33 +11,19 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Slide 4 heading level 1"
+                    text="Why Learn R?"
                 />
                 <Paragraph
-                    text="Elementum eu facilisis sed odio morbi quis. Ornare arcu odio ut sem nulla pharetra. Porttitor leo a diam sollicitudin tempor id eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Orci ac auctor augue mauris augue neque gravida in fermentum. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Eget nullam non nisi est sit amet facilisis magna etiam. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Quam id leo in vitae turpis. Est pellentesque elit ullamcorper dignissim cras tincidunt. At auctor urna nunc id cursus metus. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Non tellus orci ac auctor augue. Pulvinar etiam non quam lacus suspendisse faucibus."
+                    text="According to Hal Varian, chief economist at Google:"
                 />
                 <Quote
-                    source="./Image.png"
-                    quote="Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Quam id leo in vitae turpis. Est pellentesque elit ullamcorper dignissim cras tincidunt. At auctor urna nunc id cursus metus. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget."
-                    citation="— Lorem, I. (2008)"
-                />
-                <Heading
-                    component="h2"
-                    text="Heading level 2"
-                />
-                <Paragraph
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras. In egestas erat imperdiet sed euismod. Mauris a diam maecenas sed enim ut. At erat pellentesque adipiscing commodo elit at imperdiet dui. Pellentesque sit amet porttitor eget."
+                    source="./hal-varian.jpeg"
+                    quote="The great beauty of R is that you can modify it to do all sorts of things. And you have a lot of pre-packaged stuff that’s already available, so you’re standing on the shoulders of giants."
+                    citation="— Vance, A. (2009)."
                 />
                 <URL 
-                    name="Google.com"
-                    hyperlink="https://www.google.com"
-                />
-                <Code 
-                    lines={[
-                        "for (i = 0; i < 5) {",
-                        "print i",
-                        "}"
-                    ]}
+                    name="Vance, A. 2009. Data Analysts Captivated by R’s Power. New York Times. Accessed: 2021/04/11. Available at: "
+                    hyperlink="https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html"
                 />
             </section>
         );

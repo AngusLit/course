@@ -1,0 +1,55 @@
+.mcq {
+
+}
+
+.mcq__question {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.mcq__option {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: "center";
+    justify-content: "center";
+    height: 36px;
+}
+
+.mcq__option input {
+    margin: 0 2em;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.mcq__feedback--hidden {
+    visibility: hidden;
+}
+
+.mcq__feedback--visible {
+    visibility: visible;
+}
+
+#mcq__feedback {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #eeeeee;
+    margin: 16px;
+    padding: 24px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mcq__submit {
+    background: black;
+    color: aliceblue;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
