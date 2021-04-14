@@ -1,8 +1,7 @@
 import { Component } from 'react';
-import Heading from "../Comps/Heading.js";
-import Paragraph from "../Comps/Paragraph.js";
-import List from "../Comps/List.js";
-import Image from "../Comps/Image.js";
+import Heading from "../Comps/Heading/Heading.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Image from "../Comps/Image/Image.js";
 
 export default class App extends Component {
 	render() {

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./URL.css"
 
 export default class URL extends Component {
     render( ) {

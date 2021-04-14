@@ -1,12 +1,12 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Heading.css"
 
 export default class Heading extends Component {
     render( ) {
         return (
-            <p className={ this.props.type }>
+            <this.props.component>
                 { this.props.text }
-            </p>
+            </this.props.component>
         );
     }
 }

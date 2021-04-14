@@ -1,9 +1,8 @@
 import { Component } from 'react';
-import Heading from "../Comps/Heading.js";
-import Paragraph from "../Comps/Paragraph.js";
-import URL from "../Comps/URL.js";
-import Code from "../Comps/Code.js";
-import Quote from "../Comps/Quote.js";
+import Heading from "../Comps/Heading/Heading.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import URL from "../Comps/URL/URL.js";
+import Quote from "../Comps/Quote/Quote.js";
 
 export default class App extends Component {
     render() {

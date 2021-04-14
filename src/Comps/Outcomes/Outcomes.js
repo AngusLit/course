@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Outcomes.css"
 
 export default class Heading extends Component {
     render( ) {

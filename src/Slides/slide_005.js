@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Heading from "../Comps/Heading.js";
+import Heading from "../Comps/Heading/Heading.js";
 import MCQ from "../Comps/MCQ/MCQ.js";
 
 export default class App extends Component {

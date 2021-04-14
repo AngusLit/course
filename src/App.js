@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import './App.css';
 
-import Slides from "./Slides/index.js"
+import Slides from "./Slides/"
 
 export default class App extends Component {
     state = {

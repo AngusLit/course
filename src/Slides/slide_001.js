@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import Heading from "../Comps/Heading.js";
-import Outcomes from "../Comps/Outcomes.js";
-import Timer from "../Comps/Timer.js";
+import Heading from "../Comps/Heading/Heading.js";
+import Outcomes from "../Comps/Outcomes/Outcomes.js";
+import Timer from "../Comps/Timer/Timer.js";
 
 export default class App extends Component {
     render() {
@@ -12,9 +12,9 @@ export default class App extends Component {
                     text="Learning Outcomes"
                 />
                 <Outcomes
-                    text={[
+                    text={ [
                         "Explain the relevance of R in statistical analysis and data science."
-                    ]}
+                    ] }
                 />
                 <Timer 
                     time="15"

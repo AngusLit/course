@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Image.css"
 
 export default class Image extends Component {
     render( ) {

@@ -1,0 +1,22 @@
+img.full{
+    width: calc(100% - 32px);
+    object-fit: cover;
+}
+
+img.left, img.right {
+    width: 45%;
+    min-width: 360px;
+    object-fit: cover;
+}
+
+img.left {
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+img.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+}

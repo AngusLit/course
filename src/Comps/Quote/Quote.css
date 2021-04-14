@@ -1,0 +1,28 @@
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote__headshot {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+.quote__text {
+    padding: 0px 64px;
+    width: 480px;
+    line-height: 200%;
+    letter-spacing: 0.015em;
+    font-style: italic;
+}
+
+.quote__cite {
+    align-self: flex-end;
+}

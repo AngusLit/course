@@ -1,10 +1,10 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Paragraph.css";
 
-export default class MCQ extends Component {
+export default class Heading extends Component {
     render( ) {
         return (
-            <p>
+            <p className={ this.props.type }>
                 { this.props.text }
             </p>
         );

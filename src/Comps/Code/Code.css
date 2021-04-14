@@ -1,0 +1,9 @@
+.code__line, .code__line * {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+    background: black;
+    margin: 0px 16px;
+}

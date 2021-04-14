@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Timer.css"
 
-export default class URL extends Component {
+export default class Timer extends Component {
     render( ) {
         return (
             <p className="timer">

@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./List.css"
 
-export default class Heading extends Component {
+export default class List extends Component {
     render( ) {
         return (
             <ol>

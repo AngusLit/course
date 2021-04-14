@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import "../Slides/Slides.css"
+import "./Quote.css"
 
 export default class Quote extends Component {
     render( ) {
