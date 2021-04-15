@@ -31,13 +31,15 @@ export default class App extends Component {
                     text="Step 2"
                 />
                 <Paragraph
-                    text="Next, select the URL of a location close to you:"
+                    type="instruction"
+                    text="Next, select the URL of a location close to you."
                 />
                 <Heading
                     component="h3"
                     text="Step 3"
                 />
                 <Paragraph
+                    type="instruction"
                     text="Click on “Download R for Windows”."
                 />
                 <Heading
@@ -45,6 +47,7 @@ export default class App extends Component {
                     text="Step 4"
                 />
                 <Paragraph
+                    type="instruction"
                     text="Click on the “base” hyperlink."
                 />
                 <Heading
@@ -55,7 +58,8 @@ export default class App extends Component {
                     text="On the next tab, you should see a link featuring a download button for R version 4.0.5. (or R X.Y.Z, where X.Y.Z gives the version of R, eg. R 2.11.1)."
                 />
                 <Paragraph
-                    text="Click Download R"
+                    type="instruction"
+                    text="Click Download R."
                 />
                 <Heading
                     component="h3"
@@ -65,6 +69,7 @@ export default class App extends Component {
                     text="You might be prompted to either save or run a file."
                 />
                 <Paragraph
+                    type="instruction"
                     text="Select “Save”, and to save the folder to your desktop."
                 />
             </section>

@@ -22,6 +22,7 @@ export default class App extends Component {
                     text={`The R Tools will appear in a window. Select your preferred language.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "OK"`}
                 />
                 <Heading
@@ -32,6 +33,7 @@ export default class App extends Component {
                     text={`On the first tab with the Information heading, you can read through the terms of the license agreement.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Next"`}
                 />
                 <Heading
@@ -45,6 +47,7 @@ export default class App extends Component {
                     text={`It will default to installing R in "C:\\Program Files\\R\\R-X.Y.Z".`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Next"`}
                 />
                 <Heading
@@ -58,6 +61,7 @@ export default class App extends Component {
                     text={`If you know whether your computer is x36 or x64, you can exclude the other from the installation.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Configure your installation and then select "Next".`}
                 />
                 <Heading
@@ -68,6 +72,7 @@ export default class App extends Component {
                     text={`On the Startup options tab, you choose whether to use default or custom startup options.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select “Yes (customized startup)”, and then select “Next”.`}
                 />
                 <Heading
@@ -81,6 +86,7 @@ export default class App extends Component {
                     text={`Here you can select your display mode as one large window or multiple small ones. To keep everything grouped, select “MDI (one big window)”.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Next"`}
                 />
                 <Heading
@@ -91,6 +97,7 @@ export default class App extends Component {
                     text={`On the Help mode tab select the format you would like to view help files in.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Next"`}
                 />
                 <Heading
@@ -101,6 +108,7 @@ export default class App extends Component {
                     text={`Next, you can set the Start Menu folder that R will be saved in. You can leave this as default.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Next"`}
                 />
                 <Heading
@@ -111,6 +119,7 @@ export default class App extends Component {
                     text={`The next segment advertises additional tasks to complete.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select the Create a desktop icon, and then select “Next”.`}
                 />
                 <Heading
@@ -121,6 +130,7 @@ export default class App extends Component {
                     text={`R should now be installing and should take less than five minutes.`}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Wait for the installer to complete.`}
                 />
                 <Heading
@@ -131,6 +141,7 @@ export default class App extends Component {
                     text={"Upon completion of the R for Windows Setup Wizard, you'll see the “Completing the R for Windows Setup” screen."}
                 />
                 <Paragraph
+                    type="instruction"
                     text={`Select "Finish"`}
                 />
             </section>

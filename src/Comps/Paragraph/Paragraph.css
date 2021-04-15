@@ -1,3 +1,7 @@
+p {
+    font-family: var(--body-font);
+}
+
 p.note::before {
     display: block;
     
@@ -9,12 +13,21 @@ p.note::before {
 }
 
 p.note {
-    padding: 16px 36px 24px;
     border-left: 3px solid black;
-    margin: 32px;
+    margin: 16px;
+    padding: 16px 36px 24px;
     width: auto;
     
     line-height: 125%;
 
     background: #eee;
+}
+
+p.instruction {
+    border-left: 5px solid #FFDD55;
+    margin: 16px;
+    padding: 8px 16px;
+    width: fit-content;
+
+    background: #FFEEAA;
 }

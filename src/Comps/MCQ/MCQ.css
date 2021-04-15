@@ -7,7 +7,7 @@
 .mcq__question {
     width: calc(100% - 32px);
 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
 }
 
 .mcq__form {
@@ -23,7 +23,7 @@
 
     border-radius: 8px;
 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
 }
 
 .mcq__option:hover {
@@ -60,7 +60,7 @@
 
     background: #eeeeee;
     
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
 }
 
 .mcq__submit {    
@@ -72,7 +72,7 @@
     background: black;
 
     color: aliceblue;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
     text-transform: uppercase;
 
     border-radius: 4px;

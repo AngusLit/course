@@ -9,7 +9,7 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Part 2 – Running the Installer"
+                    text="Running the Installer"
                 />
                 <Paragraph
                     type="note"

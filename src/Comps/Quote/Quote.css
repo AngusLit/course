@@ -21,6 +21,7 @@ q {
     padding: 0px 64px;
     width: 480px;
     
+    font-family: var(--body-font);
     font-style: italic;
     letter-spacing: 0.005em;
     line-height: 200%;
