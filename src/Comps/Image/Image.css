@@ -1,39 +1,46 @@
 img.full{
     width: calc(100% - 32px);
+
     object-fit: cover;
 }
 
 img.left, img.right {
     width: 45%;
     min-width: 360px;
+
     object-fit: cover;
 }
 
 img.left {
     display: block;
+    
     margin-left: 0px;
     margin-right: auto;
 }
 
 img.right {
     display: block;
+    
     margin-left: auto;
     margin-right: 0px;
 }
 
 img.profile {
+    display: block;
+
     width: 128px;
     aspect-ratio: 1/1;
-    display: block;
     margin: auto;
-    object-fit: cover;
+
     border-radius: 50%;
+    object-fit: cover;
 }
 
 img.center {
-    max-width: 480px;
-    width: 50%;
-    min-width: 320px;
     display: block;
+
     margin: auto;
+    width: 50%;
+    max-width: 480px;
+    min-width: 320px;
 }

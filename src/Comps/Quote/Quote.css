@@ -6,8 +6,10 @@
 
 .quote__headshot {
     width: 96px;
-    height: 96px;
+    aspect-ratio: 1/1;
+
     object-fit: cover;
+    
     border-radius: 50%;
 }
 
@@ -18,9 +20,10 @@ q {
 .quote__text {
     padding: 0px 64px;
     width: 480px;
-    line-height: 200%;
-    letter-spacing: 0.005em;
+    
     font-style: italic;
+    letter-spacing: 0.005em;
+    line-height: 200%;
 }
 
 .quote__cite {
