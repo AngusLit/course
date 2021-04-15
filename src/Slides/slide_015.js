@@ -1,16 +1,16 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Heading/Heading.js";
+import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Heading/Heading.js";
-import Likert from "../Comps/Heading/Heading.js";
-import List from "../Comps/Heading/Heading.js";
-import MCQ from "../Comps/Heading/Heading.js";
-import Outcomes from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Heading/Heading.js";
-import Quote from "../Comps/Heading/Heading.js";
-import Timer from "../Comps/Heading/Heading.js";
-import URL from "../Comps/Heading/Heading.js";
+import Image from "../Comps/Image/Image.js";
+import Likert from "../Comps/Likert/Likert.js";
+import List from "../Comps/List/List.js";
+import MCQ from "../Comps/MCQ/MCQ.js";
+import Outcomes from "../Comps/Outcomes/Outcomes.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Quote from "../Comps/Quote/Quote.js";
+import Timer from "../Comps/Timer/Timer.js";
+import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +18,16 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_015.js heading"
+                    text="Step 2: Ensure you have the latest version"
+                />
+                <Paragraph
+                    text="Even if you may have the older version of R installed on your Windows PC, it is still worth upgrading to the newer version to ensure that you have the latest R features."
+                />
+                <Paragraph
+                    text="To find out the new version of R, you should check out the CRAN webpage:"
+                />
+                <Paragraph
+                    text="Beyond “the latest release,” it will say something like “R-2.12.1.tar.gz”, implying the version number. The new release of R is [X.X.X] . (for example, 2.12.1)."
                 />
             </section>
         );

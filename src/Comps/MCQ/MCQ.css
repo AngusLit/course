@@ -43,15 +43,14 @@
 }
 
 .mcq__feedback--hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .mcq__feedback--visible {
-    visibility: visible;
+    display: flex;
 }
 
 #mcq__feedback {
-    display: flex;
     flex-direction: row;
     align-items: center;
     

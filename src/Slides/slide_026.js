@@ -1,16 +1,16 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Heading/Heading.js";
+import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Heading/Heading.js";
-import Likert from "../Comps/Heading/Heading.js";
-import List from "../Comps/Heading/Heading.js";
-import MCQ from "../Comps/Heading/Heading.js";
-import Outcomes from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Heading/Heading.js";
-import Quote from "../Comps/Heading/Heading.js";
-import Timer from "../Comps/Heading/Heading.js";
-import URL from "../Comps/Heading/Heading.js";
+import Image from "../Comps/Image/Image.js";
+import Likert from "../Comps/Likert/Likert.js";
+import List from "../Comps/List/List.js";
+import MCQ from "../Comps/MCQ/MCQ.js";
+import Outcomes from "../Comps/Outcomes/Outcomes.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Quote from "../Comps/Quote/Quote.js";
+import Timer from "../Comps/Timer/Timer.js";
+import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {

@@ -13,7 +13,7 @@ export default class Quote extends Component {
                 <q className="quote__text">
                     { this.props.quote }
                 </q>
-                <p className="quote__cite">
+                <p className="quote__citation">
                     { this.props.citation }
                 </p>
             </div>
