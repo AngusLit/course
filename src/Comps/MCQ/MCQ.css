@@ -1,5 +1,5 @@
 .mcq {
-
+    display: flex;
 }
 
 .mcq__question {

@@ -18,6 +18,7 @@ export default class App extends Component {
                         "Opensource.",
                         "Automated."
                     ]}
+                    correct={ 3 }
                     feedback={`R is especially relevant because of 1) how often its requested, 2) its transparent interface which eases reusability, verifying findings and error-checking, as well as 3) it’s widespread use.`}
                 />
             </section>
