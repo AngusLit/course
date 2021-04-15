@@ -1,16 +1,6 @@
 import { Component } from 'react';
-
-import Code from "../Comps/Code/Code.js";
-import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
-import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
+import Heading from '../Comps/Heading/Heading.js';
+import Likert from '../Comps/Likert/Likert.js';
 
 export default class App extends Component {
     render() {
@@ -18,7 +8,11 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_024.js heading"
+                    text="Post-assessment"
+                />
+                <Likert 
+                    count={ 5 }
+                    question="Install R on a Windows computer."
                 />
             </section>
         );

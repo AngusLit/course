@@ -1,15 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
 import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
@@ -18,7 +11,22 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_023.js heading"
+                    text="Reflection"
+                />
+                <Paragraph
+                    text="The R screen should start up, and you’re one-step closer to starting writing your code."
+                />
+                <Image
+                    type="full"
+                    source="./Image.png"
+                />
+                <Paragraph
+                    type="note"
+                    text="The R screen should start up, and you’re one-step closer to starting writing your code."
+                />
+                <URL
+                    name="R for Windows FAQ"
+                    hyperlink="https://cran.r-project.org/bin/windows/base/rw-FAQ.html"
                 />
             </section>
         );

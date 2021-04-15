@@ -8,7 +8,7 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Knowledge check"
+                    text="Knowledge Check"
                 />
                 <MCQ
                     question="Which of the following does not explain the relevance of R in statistical analysis and data science?"

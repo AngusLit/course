@@ -1,16 +1,7 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +9,17 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_020.js heading"
+                    text="Part 2 – Running the Installer"
+                />
+                <Paragraph
+                    type="note"
+                    text="This section is intended to guide you through the installation. You are not required to memorise the steps."
+                />
+                <Paragraph
+                    text="Instead, ensure you understand the process well enough to perform the installation in future."
+                />
+                <Paragraph
+                    text="For a walkthrough to installing R, complete this guide. It will take you through a step-by-step process to install and run R on a Windows machine."
                 />
             </section>
         );

@@ -10,7 +10,7 @@ export default class App extends Component {
 			<section className="slide">
                 <Heading
                     component="h1"
-                    text="What to expect"
+                    text="What to Expect"
                 />
 				<Paragraph
                     text="To use R, you’ll have to install the R programming environment on your machine. Once R is installed, we can then begin developing data analyses."
