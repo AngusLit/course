@@ -48,11 +48,10 @@
 
 #mcq__feedback {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: calc(100% - 80px);
     background: #eeeeee;
     margin: 16px;
     padding: 24px;
-    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;

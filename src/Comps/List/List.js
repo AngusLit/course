@@ -6,7 +6,6 @@ export default class List extends Component {
         return (
             <ol>
                 { this.props.text.map( ( val, i ) => {
-                    console.log(typeof( val))
                     if ( typeof( val ) === "object") {
                         return (
                             <ol type="a">

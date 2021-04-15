@@ -18,6 +18,9 @@ export default class App extends Component {
                     text="For example:"
                 />
                 <Image type="full" source="./Image.png" />
+                <Paragraph
+                    text="This is why R is widely used in mathematical inference, data processing and machine learning."
+                />
 			</section>
 		);
 	}

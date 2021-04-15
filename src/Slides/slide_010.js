@@ -1,0 +1,25 @@
+import { Component } from 'react';
+import Heading from "../Comps/Heading/Heading.js";
+import Outcomes from "../Comps/Outcomes/Outcomes.js";
+import Timer from "../Comps/Timer/Timer.js";
+
+export default class App extends Component {
+    render() {
+        return (
+            <section className="slide">
+                <Heading
+                    component="h1"
+                    text="Learning Outcomes"
+                />
+                <Outcomes
+                    text={ [
+                        "Install R on a Windows computer."
+                    ] }
+                />
+                <Timer 
+                    time="10"
+                />
+            </section>
+        );
+    }
+}
