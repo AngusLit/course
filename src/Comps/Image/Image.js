@@ -8,6 +8,7 @@ export default class Image extends Component {
                 className={ this.props.type }
                 alt={ this.props.textAlternative }
                 src={ this.props.source }
+                style={ this.props.style }
             />
         );
     }

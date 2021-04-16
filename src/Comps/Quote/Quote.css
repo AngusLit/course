@@ -19,7 +19,7 @@ q {
 
 .quote__text {
     padding: 0px 64px;
-    width: 480px;
+    max-width: 480px;
     
     font-family: var(--body-font);
     font-style: italic;

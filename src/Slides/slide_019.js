@@ -9,13 +9,17 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Reflection"
+                    text="Running the Installer"
                 />
                 <Paragraph
-                    text="Well done on navigating through R’s site and getting your file."
+                    type="note"
+                    text="This section is intended to guide you through the installation. You are not required to memorise the steps."
                 />
                 <Paragraph
-                    text="Next, we’ll install R and RGui."
+                    text="Instead, ensure you understand the process well enough to perform the installation in future."
+                />
+                <Paragraph
+                    text="For a walkthrough to installing R, complete this guide. It will take you through a step-by-step process to install and run R on a Windows machine."
                 />
             </section>
         );

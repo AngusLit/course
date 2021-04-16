@@ -1,15 +1,7 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
 import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
@@ -18,7 +10,18 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_026.js heading"
+                    text="Why Install RStudio?"
+                />
+                <Paragraph
+                    text={[
+                        "RStudio is similar to the standard RGui but is considerably more user friendly. It has more drop-down menus, windows with multiple tabs, and many customization options.",
+                        "RStudio is an integrated development environment (IDE) that allows you to interact with R more readily.",
+                        "RStudio can be downloaded following similar steps to download R."
+                    ]}
+                />
+                <URL
+                    name="RStudio"
+                    hyperlink="https://www.rstudio.com/products/rstudio/download/#download"
                 />
             </section>
         );

@@ -54,4 +54,5 @@
 
     color: #0088FF;
     text-decoration: none;
+    overflow-wrap: anywhere;
 }

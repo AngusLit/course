@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +10,24 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_028.js heading"
+                    text="Running RStudio"
+                />
+                <Paragraph
+                    text={[
+                        `When we open RStudio, R is automatically launched as well. Any new consumer is often puzzled when they open R instead of RStudio. Look for "RStudio" on the desktop and pin the program to your desired workspace (e.g. Desktop or toolbar).`,
+                        `The first time you open RStudio, you will see three windows.`
+                    ]}
+                />
+                <Image
+                    type="full"
+                    source="./Image.png"
+                />
+                <Paragraph
+                    text={`A fourth window (the console) is hidden by default, but can be opened by pressing CTRL + Shift + N, or clicking the File drop-down menu, then New File, and then R Script.`}
+                />
+                <Image
+                    type="full"
+                    source="./Image.png"
                 />
             </section>
         );

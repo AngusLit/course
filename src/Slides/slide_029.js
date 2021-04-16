@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Heading/Heading.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Heading/Heading.js";
-import Likert from "../Comps/Heading/Heading.js";
-import List from "../Comps/Heading/Heading.js";
-import MCQ from "../Comps/Heading/Heading.js";
-import Outcomes from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Heading/Heading.js";
-import Quote from "../Comps/Heading/Heading.js";
-import Timer from "../Comps/Heading/Heading.js";
-import URL from "../Comps/Heading/Heading.js";
+import Image from "../Comps/Image/Image.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +10,14 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_029.js heading"
+                    text="Orienting Yourself"
+                />
+                <Paragraph
+                    text={`Hover over the different windows in the image below to learn more about what it’s used for.`}
+                />
+                <Image
+                    type="full"
+                    source="./Image.png"
                 />
             </section>
         );

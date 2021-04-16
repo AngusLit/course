@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Slide000 from './slide_000.js';
 import Slide001 from './slide_001.js';
 import Slide002 from './slide_002.js';
 import Slide003 from './slide_003.js';
@@ -27,12 +28,15 @@ import Slide025 from './slide_025.js';
 import Slide026 from './slide_026.js';
 import Slide027 from './slide_027.js';
 import Slide028 from './slide_028.js';
+import Slide029 from './slide_029.js';
+import Slide030 from './slide_030.js';
 
 import "./Slides.css"
 
 export default class App extends Component {
     state={
         contents: [
+            <Slide000 />,
             <Slide001 />,
             <Slide002 />,
             <Slide003 />,
@@ -56,7 +60,13 @@ export default class App extends Component {
             <Slide021 />,
             <Slide022 />,
             <Slide023 />,
-            <Slide024 />
+            <Slide024 />,
+            <Slide025 />,
+            <Slide026 />,
+            <Slide027 />,
+            <Slide028 />,
+            <Slide029 />,
+            <Slide030 />
         ]
     }
 

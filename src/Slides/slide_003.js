@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Image from "../Comps/Image/Image.js";
 import List from "../Comps/List/List.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
 
 export default class App extends Component {
     render() {
@@ -29,6 +30,10 @@ export default class App extends Component {
                     ],
                     `R is free, open source, strong, and easy-to-use.`
                 ] } />
+                <Image
+                    style={{width: "128px", display: "block", margin: "auto"}}
+                    source="./r-logo.svg"
+                />
             </section>
         );
     }

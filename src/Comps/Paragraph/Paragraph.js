@@ -2,11 +2,25 @@ import { Component } from 'react';
 import "./Paragraph.css";
 
 export default class Heading extends Component {
+    
     render( ) {
+        let contents
+        if ( typeof( this.props.text )  === "object"  ) {
+            contents = this.props.text.map( (val, i ) => {
+                        return (
+                            <p key={ i }>
+                                { val }
+                            </p>
+                        )
+                    } )
+        } else {
+            contents = <p>{ this.props.text } </p>
+        }
+
         return (
-            <p className={ this.props.type }>
-                { this.props.text }
-            </p>
-        );
+            <section className={ this.props.type }>
+                { contents }
+            </section>
+        )
     }
 }

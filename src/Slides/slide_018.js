@@ -20,15 +20,19 @@ export default class App extends Component {
                     text="First, you’ll need to open the following URL in your web browser."
                 />
                 <URL   
-                    name="R Download mirrors"
+                    name="CRAN - Mirrors"
                     hyperlink="https://cran.r-project.org/mirrors.html"
                 />
                 <Paragraph
-                    text="The page will list various download locations."
+                    type="instruction"
+                    text="Open the URL above in your browser."
                 />
                 <Heading
                     component="h3"
                     text="Step 2"
+                />
+                <Paragraph
+                    text="The page will list various download locations."
                 />
                 <Paragraph
                     type="instruction"
@@ -71,6 +75,16 @@ export default class App extends Component {
                 <Paragraph
                     type="instruction"
                     text="Select “Save”, and to save the folder to your desktop."
+                />
+                <Heading
+                    component="h3"
+                    text="Reflection"
+                />
+                <Paragraph
+                    text="Well done on navigating through R’s site and getting your file."
+                />
+                <Paragraph
+                    text="Next, we’ll install R and RGui."
                 />
             </section>
         );

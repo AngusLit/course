@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
+import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
 import Quote from "../Comps/Quote/Quote.js";
@@ -11,6 +12,20 @@ export default class App extends Component {
                 <Heading
                     component="h1"
                     text="Why Learn R?"
+                />
+                <Paragraph
+                    text={ [
+                        "R is a language and environment for statistical computing and graphics. a wide variety of statistical and graphical techniques, and is highly extensible. As such it offers an integrated suite of software facilities for data manipulation, calculation and graphical display, which includes:"
+                    ] }
+                />
+                <List
+                    text={[
+                        "An effective data handling and storage facility",
+                        "A suite of operators for calculations on arrays, in particular matrices",
+                        "A large, coherent, integrated collection of intermediate tools for data analysis",
+                        "Graphical facilities for data analysis and display either on-screen or on hardcopy, and",
+                        "A well-developed, simple and effective programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities."
+                    ]}
                 />
                 <Paragraph
                     text="According to Hal Varian, chief economist at Google:"

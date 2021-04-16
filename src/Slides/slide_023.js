@@ -1,9 +1,7 @@
 import { Component } from 'react';
 
-import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Image/Image.js";
-import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import URL from "../Comps/URL/URL.js";
+import Heading from '../Comps/Heading/Heading.js';
+import Likert from '../Comps/Likert/Likert.js';
 
 export default class App extends Component {
     render() {
@@ -11,22 +9,11 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Reflection"
+                    text="Post-assessment"
                 />
-                <Paragraph
-                    text="The R screen should start up, and you’re one-step closer to starting writing your code."
-                />
-                <Image
-                    type="full"
-                    source="./Image.png"
-                />
-                <Paragraph
-                    type="note"
-                    text="The R screen should start up, and you’re one-step closer to starting writing your code."
-                />
-                <URL
-                    name="R for Windows FAQ"
-                    hyperlink="https://cran.r-project.org/bin/windows/base/rw-FAQ.html"
+                <Likert 
+                    count={ 5 }
+                    question="Install R on a Windows computer."
                 />
             </section>
         );

@@ -9,6 +9,10 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
+                    text="Topic 2: Installing R"
+                />
+                <Heading
+                    component="h2"
                     text="Learning Outcomes"
                 />
                 <Outcomes
