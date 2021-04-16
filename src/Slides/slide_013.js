@@ -9,7 +9,7 @@ export default class App extends Component {
 			<section className="slide">
                 <Heading
                     component="h1"
-                    text="Pre-flight checklist"
+                    text="Pre-flight Checklist"
                 />
                 <Paragraph
                     text="The instructions will concentrate on installing R on a PC. However, brief notes will be made of how similar commands can be used in Mac or Linux."
@@ -48,6 +48,13 @@ export default class App extends Component {
                 <Image
                     type="center"
                     source="./r-start-icon.png"
+                />
+                <Heading
+                    component="h3"
+                    text="Results"
+                />
+                <Paragraph
+                    text="If you find the icon using either steps, it means that the R program is already installed on your computer and you can start R by selecting R at the top of the list."
                 />
 			</section>
 		);

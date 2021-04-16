@@ -56,11 +56,7 @@ export default class App extends Component {
             <Slide021 />,
             <Slide022 />,
             <Slide023 />,
-            <Slide024 />,
-            <Slide025 />,
-            <Slide026 />,
-            <Slide027 />,
-            <Slide028 />,
+            <Slide024 />
         ]
     }
 

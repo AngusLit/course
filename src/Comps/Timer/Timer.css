@@ -1,11 +1,13 @@
 .timer {
-    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
     margin: 16px;
     padding: 24px;
     width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+    background: #eeeeee;
 }
 
 .timer svg:first-of-type {

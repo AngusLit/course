@@ -1,16 +1,33 @@
+p {
+    font-family: var(--body-font);
+}
+
 p.note::before {
-    content: "Please note: ";
     display: block;
-    font-weight: 600;
+    
     margin-left: -18px;
+
+    content: "Please note: ";
+    font-weight: 600;
     line-height: 250%;
 }
 
 p.note {
-    background: #eee;
-    padding: 16px 36px 24px 36px;
-    line-height: 125%;
-    margin: 32px;
-    width: auto;
     border-left: 3px solid black;
+    margin: 16px;
+    padding: 16px 36px 24px;
+    width: auto;
+    
+    line-height: 125%;
+
+    background: #eee;
+}
+
+p.instruction {
+    border-left: 5px solid #FFDD55;
+    margin: 16px;
+    padding: 8px 16px;
+    width: fit-content;
+
+    background: #FFEEAA;
 }

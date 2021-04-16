@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Heading/Heading.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Heading/Heading.js";
-import Likert from "../Comps/Heading/Heading.js";
-import List from "../Comps/Heading/Heading.js";
-import MCQ from "../Comps/Heading/Heading.js";
-import Outcomes from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Heading/Heading.js";
-import Quote from "../Comps/Heading/Heading.js";
-import Timer from "../Comps/Heading/Heading.js";
-import URL from "../Comps/Heading/Heading.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +10,31 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_017.js heading"
+                    text="Install R on a Windows PC"
+                />
+                <Paragraph
+                    type="note"
+                    text="The following instructions are for installing R on a Windows device."
+                />
+                <Paragraph
+                    text="If you want to install R on a non-Windows computer, you can download the required R installer for that operating system at:"
+                />
+                <URL
+                    name="The Comprehensive R Archive Network:"
+                    hyperlink="https://cran.mirror.ac.za/"
+                />
+                <Paragraph
+                    text="Follow the R installation instructions for that operating system at:"
+                />
+                <URL
+                    name={[
+                        "MacOS X:",
+                        "Linux:"
+                    ]}
+                    hyperlink={[
+                        "https://cran.r-project.org/bin/macosx/",
+                        "https://cran.r-project.org/doc/manuals/R-admin.html#Installing-R-under-Unix_002dalikes"
+                    ]}
                 />
             </section>
         );

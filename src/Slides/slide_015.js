@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Heading/Heading.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Heading/Heading.js";
-import Likert from "../Comps/Heading/Heading.js";
-import List from "../Comps/Heading/Heading.js";
-import MCQ from "../Comps/Heading/Heading.js";
-import Outcomes from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Heading/Heading.js";
-import Quote from "../Comps/Heading/Heading.js";
-import Timer from "../Comps/Heading/Heading.js";
-import URL from "../Comps/Heading/Heading.js";
+import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +10,28 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="slide_015.js heading"
+                    text="Pre-flight Checklist"
+                />
+                <Heading
+                    component="h2"
+                    text="Step 3: Getting the latest version"
+                />
+                <Paragraph
+                    text="R is available for download at the following link:"
+                />
+                <URL
+                    name="R-project homepage:"
+                    hyperlink="https://www.r-project.org/"
+                />
+                <Paragraph
+                    text="Once R is installed, you can begin performing data analysis."
+                />
+                <Paragraph
+                    type="note"
+                    text="Great new releases of R are made daily, and these new versions are being constantly tested and developed."
+                />
+                <Paragraph
+                    text="Updating R periodically is a good idea to ensure that you have an updated version of R. (to ensure compatibility with all the latest versions of the R packages that you have downloaded)."
                 />
             </section>
         );

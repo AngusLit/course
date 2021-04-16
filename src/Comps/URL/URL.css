@@ -3,18 +3,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: auto;
-    background: #eee;
-    padding: 16px 24px 24px 18px;
-    line-height: 125%;
-    margin: 16px;
+
     border-left: 3px solid black;
+    margin: 16px;
+    padding: 16px 24px 24px 18px;
+    width: auto;
+
+    background: #eee;
+
+    font-family: var(--body-font);
+    line-height: 125%;
 }
 
 .url::before {
-    width: 100%;
-    content: "Go exploring";
     display: block;
+
+    width: 100%;
+
+    content: "Go exploring";
     font-weight: 600;
     line-height: 250%;
 }
@@ -22,15 +28,17 @@
 .url__link {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 96px);
     justify-content: center;
+
+    width: calc(100% - 96px);
 }
 
 .url__link p {
     margin-block-start: 0;
     margin-block-end: 0;
-    line-height: 125%;
     padding: 0;
+
+    line-height: 125%;
 }
 
 .url svg:first-of-type {
@@ -40,8 +48,10 @@
 
 .url a {
     display: flex;
-    width: fit-content;
+
     padding-left: 4px;
+    width: fit-content;
+
     color: #0088FF;
     text-decoration: none;
 }
