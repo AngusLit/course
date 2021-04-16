@@ -20,6 +20,26 @@
   align-items: center;
 }
 
+.app-nav__home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  margin: 8px;
+  padding: 8px;
+  height: 36px;
+  aspect-ratio: 1/1;
+
+  background: white;
+  border-radius: 4px;
+
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  
+  cursor: pointer;
+}
+
 .app-nav__button {
   background: black;
   color: aliceblue;

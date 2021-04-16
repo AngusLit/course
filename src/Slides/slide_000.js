@@ -22,13 +22,23 @@ export default class App extends Component {
                 <Paragraph
                     text={`Your module is divided as follows:`}
                 />
-                <TOC text={ [
-                    `History and use-cases`,
-                    `Installing R`,
-                    `Setting up RStudio`,
-                    `Working with R packages`,
-                    `Getting the most with RMarkdown`
-                ] } />
+                <TOC
+                    setIndex={ this.props.setIndex }
+                    text={ [
+                        `History and use-cases`,
+                        `Installing R`,
+                        `Setting up RStudio`,
+                        `Working with R packages`,
+                        `Getting the most with RMarkdown`
+                    ] }
+                    indices={ [
+                        1,
+                        10,
+                        24,
+                        0,
+                        0
+                    ] }
+                />
                 <Timer
                     time="90"
                 />

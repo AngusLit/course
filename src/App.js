@@ -7,12 +7,17 @@ export default class App extends Component {
     constructor( ) {
         super( );
         this.setMax = this.setMax.bind( this );
+        this.setIndex = this.setIndex.bind( this );
     }
 
     state = {
         index: 0,
         min: 0,
         max: 0
+    }
+
+    setIndex ( val ) {
+        this.setState( { index: val } )
     }
 
     setMax ( val ) {
@@ -22,7 +27,29 @@ export default class App extends Component {
     render() {
         return (
             <div className="App">
-                <Slides setMax={ this.setMax } index={ this.state.index } />
+                <section className="app-top-nav">
+                    <button className="app-nav__home-button"
+                        onClick={
+                            ( ) => {
+                                    this.setState({
+                                        index: 0
+                                    })
+                                }
+                            }
+                    >
+                       <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        width="24px"
+                        fill="#000000"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+				    </button>
+                </section>
+                <Slides setIndex={ this.setIndex } setMax={ this.setMax } index={ this.state.index } />
                 <section className="app-nav">
                     <button
                         className="app-nav__button"

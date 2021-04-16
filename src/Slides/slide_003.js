@@ -10,7 +10,7 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text={`Why Learn R?`}
+                    text={`Why learn R?`}
                 />
 				<Paragraph
                     text={`There are 3 major reasons to learn about R:`}

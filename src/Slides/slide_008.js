@@ -8,7 +8,7 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Knowledge Check"
+                    text="Knowledge check"
                 />
                 <MCQ
                     question="During which decade was R developed?"
