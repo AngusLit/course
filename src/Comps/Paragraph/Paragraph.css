@@ -2,15 +2,6 @@ p {
     font-family: var(--body-font);
 }
 
-section.welcome {
-    border-left: 5px solid #dddddd;
-    margin: 16px;
-    padding: 8px 16px;
-    width: fit-content;
-
-    background: #eeeeee;
-}
-
 section.note::before {
     display: block;
     

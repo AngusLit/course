@@ -1,0 +1,42 @@
+.table-of-contents {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.toc__tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 44%;
+}
+
+.toc__number, .toc__name {
+    margin-block-end: 0;
+    margin-block-start: 0;
+
+    text-align: center;
+}
+
+.toc__name {
+    border-top: 5px solid black;
+    margin: 8px 24px;
+    padding: 8px 2px 0px;
+    width: 128px;
+
+    font-size: 18px;
+}
+
+.toc__number {
+    font-family: var(--body-font);
+    font-style: 700;
+    font-size: 36px;
+}
+
+.toc__number:before {
+    content: "0"
+}

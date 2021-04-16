@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
-import List from "../Comps/List/List.js";
+import TOC from "../Comps/TOC/TOC.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import Timer from "../Comps/Timer/Timer.js";
+import Welcome from "../Comps/Welcome/Welcome.js";
 
 export default class App extends Component {
     render() {
@@ -12,27 +13,26 @@ export default class App extends Component {
                     component="h1"
                     text="Introduction to R Programming"
                 />
-                <Paragraph
-                    type="welcome"
+                <Welcome
                     text={ [
-                        `Welcome to the Introduction to R Programming module, where you'll learn all about one of the most popular and requested statistical programming languages!`,
+                        `Welcome to the Introduction to R Programming module! Here you'll be introduced to one of the most popular and widely requested statistical programming languages.`,
                         `To get started, click the next button below to dive into the first subtopic.`
                     ] }
                 />
                 <Paragraph
                     text={`Your module is divided as follows:`}
                 />
-                <List text={ [
-                    `History and Use-cases`,
+                <TOC text={ [
+                    `History and use-cases`,
                     `Installing R`,
-                    `Setting up R Studio`,
-                    `Working with R Packages`,
-                    `Getting the Most with R Markdown`
+                    `Setting up RStudio`,
+                    `Working with R packages`,
+                    `Getting the most with RMarkdown`
                 ] } />
                 <Timer
                     time="90"
                 />
             </section>
         );
-    }
-}
+    };
+};

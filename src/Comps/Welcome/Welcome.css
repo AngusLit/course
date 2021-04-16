@@ -1,0 +1,26 @@
+section.welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    border-left: 3px solid black;
+    margin: 16px;
+    padding: 16px 24px 24px 18px;
+    width: auto;
+
+    background: #eee;
+
+    font-family: var(--body-font);
+    line-height: 125%;
+}
+
+section.welcome p {
+    margin: 0;
+    width: calc(100% - 80px);
+}
+
+section.welcome p:not(:first-of-type) {
+    margin-left: 48px;
+    margin-top: 16px;
+}

@@ -8,16 +8,24 @@ export default class List extends Component {
                 { this.props.text.map( ( val, i ) => {
                     if ( typeof( val ) === "object") {
                         return (
-                            <ol type="a">
-                                {
-                                    val.map( ( x ) => {
-                                        return <li>{ x }</li>
-                                    } )
-                                }
-                            </ol>
+                            <ol key={ i }
+                                type="a"
+                            >{
+                                val.map( ( x, j ) => {
+                                    return(
+                                        <li key={ j }>{ 
+                                            x
+                                        }</li>
+                                    )
+                                } )
+                            }</ol>
                         )
                     } else {
-                        return <li key={ i }>{ val }</li>
+                        return (
+                            <li key={ i }>
+                                { val }
+                            </li>
+                        )
                     }
                 } ) }
             </ol>

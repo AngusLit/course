@@ -4,7 +4,7 @@ import "./Heading.css"
 export default class Heading extends Component {
     render( ) {
         return (
-            <this.props.component>
+            <this.props.component className={ this.props.type }>
                 { this.props.text }
             </this.props.component>
         );

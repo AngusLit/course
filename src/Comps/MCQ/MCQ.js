@@ -61,10 +61,11 @@ export default class MCQ extends Component {
                 <p className="mcq__question">
                     { this.props.question }
                 </p>
+
                 <form className="mcq__form">
                     { this.props.options.map( ( val, i ) => {
                         return (
-                            <div className="mcq__option">
+                            <div key={i} className="mcq__option">
                                 <input
                                     id={ `option_${ i }` }
                                     className="mcq__input"
@@ -99,6 +100,7 @@ export default class MCQ extends Component {
                         { this.props.feedback }
                     </p>
                 </section>
+                
             </div>
         );
     };

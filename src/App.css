@@ -36,3 +36,23 @@
 .app-nav__progress {
   width: 50%;
 }
+
+progress {
+  height: 12px;
+
+  background-color: #878787;
+
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #878787;
+  border-radius: 8px;
+}
