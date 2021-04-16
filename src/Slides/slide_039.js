@@ -18,7 +18,14 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Post-assessment"
+                    text="Pre-assessment"
+                />
+                <Likert 
+                    count={ 5 }
+                    question={[
+                        `Distinguish between base and distributed R packages.`,
+                        `Install distributed packages on your machine.`
+                    ]}
                 />
             </section>
         );

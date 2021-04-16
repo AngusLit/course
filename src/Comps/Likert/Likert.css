@@ -24,7 +24,16 @@
     margin: 24px 128px;
 }
 
+
 .likert__question {
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.likert__text {
     width: 100%;
 }
 

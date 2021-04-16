@@ -35,7 +35,7 @@ export default class App extends Component {
                         1,
                         10,
                         24,
-                        0,
+                        38,
                         0
                     ] }
                 />

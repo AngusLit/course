@@ -30,6 +30,22 @@ import Slide027 from './slide_027.js';
 import Slide028 from './slide_028.js';
 import Slide029 from './slide_029.js';
 import Slide030 from './slide_030.js';
+import Slide031 from './slide_031.js';
+import Slide032 from './slide_032.js';
+import Slide033 from './slide_033.js';
+import Slide034 from './slide_034.js';
+import Slide035 from './slide_035.js';
+import Slide036 from './slide_036.js';
+import Slide037 from './slide_037.js';
+import Slide038 from './slide_038.js';
+import Slide039 from './slide_039.js';
+import Slide040 from './slide_040.js';
+import Slide041 from './slide_041.js';
+import Slide042 from './slide_042.js';
+import Slide043 from './slide_043.js';
+import Slide044 from './slide_044.js';
+import Slide045 from './slide_045.js';
+import Slide046 from './slide_046.js';
 
 import "./Slides.css"
 
@@ -66,7 +82,23 @@ export default class App extends Component {
             <Slide027 />,
             <Slide028 />,
             <Slide029 />,
-            <Slide030 />
+            <Slide030 />,
+            <Slide031 />,
+            <Slide032 />,
+            <Slide033 />,
+            <Slide034 />,
+            <Slide035 />,
+            <Slide036 />,
+            <Slide037 />,
+            <Slide038 />,
+            <Slide039 />,
+            <Slide040 />,
+            <Slide041 />,
+            <Slide042 />,
+            <Slide043 />,
+            <Slide044 />,
+            <Slide045 />,
+            <Slide046 />
         ]
     }
 

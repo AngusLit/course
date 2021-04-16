@@ -14,6 +14,29 @@ export default class Likert extends Component {
             )
         }
 
+        let contents
+        if ( typeof( this.props.question )  === "object"  ) {
+            contents = this.props.question.map( (val, i ) => {
+                        return (
+                            <div className="likert__question">
+                                <p className="likert__text">
+                                    { val }
+                                </p>
+                                <div className="likert__options">
+                                    { arr }
+                                </div>
+                            </div>
+                        )
+                    } )
+        } else {
+            contents =  <div>
+                            <p className="likert__question">{ this.props.question }</p>
+                            <div className="likert__options">
+                                { arr }
+                            </div>
+                        </div>
+        }
+
         return (
             <form className="likert">
                 <p className="likert__instruction">
@@ -28,10 +51,7 @@ export default class Likert extends Component {
                 </svg>
                     Rate how well you could perform the below outcomes:
                 </p>
-                <p className="likert__question">{ this.props.question }</p>
-                <div className="likert__options">
-                    { arr }
-                </div>
+                { contents }
             </form>
         );
     }
