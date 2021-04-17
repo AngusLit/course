@@ -46,6 +46,16 @@ import Slide043 from './slide_043.js';
 import Slide044 from './slide_044.js';
 import Slide045 from './slide_045.js';
 import Slide046 from './slide_046.js';
+import Slide047 from './slide_047.js';
+import Slide048 from './slide_048.js';
+import Slide049 from './slide_049.js';
+import Slide050 from './slide_050.js';
+import Slide051 from './slide_051.js';
+import Slide052 from './slide_052.js';
+import Slide053 from './slide_053.js';
+import Slide054 from './slide_054.js';
+import Slide055 from './slide_055.js';
+import Slide056 from './slide_056.js';
 
 import "./Slides.css"
 
@@ -98,7 +108,17 @@ export default class App extends Component {
             <Slide043 />,
             <Slide044 />,
             <Slide045 />,
-            <Slide046 />
+            <Slide046 />,
+            <Slide047 />,
+            <Slide048 />,
+            <Slide049 />,
+            <Slide050 />,
+            <Slide051 />,
+            <Slide052 />,
+            <Slide053 />,
+            <Slide054 />,
+            <Slide055 />,
+            <Slide056 />
         ]
     }
 

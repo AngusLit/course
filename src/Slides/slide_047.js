@@ -18,7 +18,11 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Verifying your installation"
+                    text="Topic 5: Getting the most with RMarkdown"
+                />
+                <Heading
+                    component="h2"
+                    text="Learning outcomes"
                 />
             </section>
         );

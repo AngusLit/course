@@ -29,8 +29,10 @@ export default class Likert extends Component {
                         )
                     } )
         } else {
-            contents =  <div>
-                            <p className="likert__question">{ this.props.question }</p>
+            contents =  <div className="likert__question">
+                            <p className="likert__text">
+                                { this.props.question }
+                            </p>
                             <div className="likert__options">
                                 { arr }
                             </div>

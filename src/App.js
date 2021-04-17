@@ -49,7 +49,12 @@ export default class App extends Component {
                         </svg>
 				    </button>
                 </section>
-                <Slides setIndex={ this.setIndex } setMax={ this.setMax } index={ this.state.index } />
+                <Slides
+                    setIndex={ this.setIndex }
+                    setMax={ this.setMax }
+                    index={ this.state.index }
+                />
+                
                 <section className="app-nav">
                     <button
                         className="app-nav__button"

@@ -18,7 +18,14 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Verifying your installation"
+                    text="Post-assessment"
+                />
+                <Likert 
+                    count={ 5 }
+                    question={[
+                        `Explain the uses of RMarkdown`,
+                        `Install RMarkdown in RStudio`
+                    ]}
                 />
             </section>
         );

@@ -36,7 +36,7 @@ export default class App extends Component {
                         10,
                         24,
                         38,
-                        0
+                        47
                     ] }
                 />
                 <Timer
