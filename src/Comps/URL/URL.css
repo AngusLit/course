@@ -33,17 +33,21 @@
     width: calc(100% - 96px);
 }
 
+.url__link:not(:first-of-type) {
+    padding-left: 64px;
+}
+
 .url__link p {
     margin-block-start: 0;
     margin-block-end: 0;
-    padding: 0;
+    padding: 4px 0;
 
     line-height: 125%;
 }
 
 .url svg:first-of-type {
     margin-bottom: auto;
-    margin-right: 32px;
+    margin-right: 16px;
 }
 
 .url a {

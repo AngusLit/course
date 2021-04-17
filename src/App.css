@@ -9,7 +9,11 @@
   background: white;
 }
 
-.app-nav {
+.app-top-nav {
+  height: 32px;
+}
+
+.app-bottom-nav {
   background: white;
   position: absolute;
   bottom: 0;
@@ -38,6 +42,17 @@
   text-transform: uppercase;
   
   cursor: pointer;
+  
+  fill: black;
+}
+
+.app-nav__home-button:hover {
+  fill: white;
+  background: grey;
+}
+
+.app-nav__home-button:active {
+  background: black;
 }
 
 .app-nav__button {
@@ -54,17 +69,17 @@
 }
 
 .app-nav__progress {
-  width: 50%;
+  width: 75%;
 }
 
 progress {
-  height: 12px;
+  height: 8px;
 
   background-color: #878787;
 
   appearance: none;
   -webkit-appearance: none;
-  border-radius: 8px;
+  border-radius: 50%;
 }
 
 progress::-webkit-progress-bar {

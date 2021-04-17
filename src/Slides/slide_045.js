@@ -11,7 +11,8 @@ export default class App extends Component {
                     component="h1"
                     text="Post-assessment"
                 />
-                <Likert 
+                <Likert
+                    index={ window.sessionStorage.getItem( `index` ) }
                     count={ 5 }
                     question={[
                         `Distinguish between base and distributed R packages.`,

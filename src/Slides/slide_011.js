@@ -10,7 +10,8 @@ export default class App extends Component {
                     component="h1"
                     text="Pre-assessment"
                 />
-                <Likert 
+                <Likert
+                    index={ window.sessionStorage.getItem( `index` ) }
                     count={ 5 }
                     question="Install R on a Windows computer."
                 />

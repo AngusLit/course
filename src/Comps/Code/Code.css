@@ -1,4 +1,4 @@
-.code__line, .code__line * {
+.code__line {
     display: flex;
     flex-direction: row;
     
@@ -6,7 +6,15 @@
     
     background: black;
     
-    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
     font-weight: 300;
+}
+
+.line__number {
+    color: grey;
+    user-select: none;
+}
+
+.line__expression {
+    font-family: "Roboto Mono", 'Courier New', Courier, monospace;
     color: white;
 }

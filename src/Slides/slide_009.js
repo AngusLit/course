@@ -11,6 +11,7 @@ export default class App extends Component {
                     text="Post-assessment"
                 />
                 <Likert 
+                    index={ window.sessionStorage.getItem( `index` ) }
                     count={ 5 }
                     question="Explain the relevance of R in statistical analysis and data science."
                 />

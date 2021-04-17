@@ -10,19 +10,23 @@ export default class App extends Component {
         return (
             <section className="slide">
                 <Heading
+                    index={ window.sessionStorage.getItem( `index` ) }
                     component="h1"
                     text="Introduction to R Programming"
                 />
                 <Welcome
+                    index={ window.sessionStorage.getItem( `index` ) }
                     text={ [
                         `Welcome to the Introduction to R Programming module! Here you'll be introduced to one of the most popular and widely requested statistical programming languages.`,
                         `To get started, click the next button below to dive into the first subtopic.`
                     ] }
                 />
                 <Paragraph
+                    index={ window.sessionStorage.getItem( `index` ) }
                     text={`Your module is divided as follows:`}
                 />
                 <TOC
+                    index={ window.sessionStorage.getItem( `index` ) }
                     setIndex={ this.props.setIndex }
                     text={ [
                         `History and use-cases`,
@@ -35,11 +39,12 @@ export default class App extends Component {
                         1,
                         10,
                         24,
-                        38,
-                        47
+                        37,
+                        46
                     ] }
                 />
                 <Timer
+                    index={ window.sessionStorage.getItem( `index` ) }
                     time="90"
                 />
             </section>

@@ -12,6 +12,7 @@ export default class App extends Component {
                     text="Post-assessment"
                 />
                 <Likert 
+                    index={ window.sessionStorage.getItem( `index` ) }
                     count={ 5 }
                     question="Install RStudio on a Windows computer."
                 />
