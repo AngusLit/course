@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,9 +10,21 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Viewing variables"
+                    text="The global environment"
+                />
+                <Paragraph
+                    component="h1"
+                    text={[
+                        `When variables are created in RStudio, they are saved in the R environment.`,
+                        `When writing code in R, any variables we define, save in a dataframe, and import and save, are stored in our global environment. We can see the artifacts in the environment at the top right of the RStudio interface in the Environment tab.`,
+                    ]}
+                />
+                <Image
+                    type="center"
+                    source="./Image.png"
                 />
             </section>
+            
         );
     }
 }

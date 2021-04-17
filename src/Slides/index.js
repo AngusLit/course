@@ -55,7 +55,6 @@ import Slide052 from './slide_052.js';
 import Slide053 from './slide_053.js';
 import Slide054 from './slide_054.js';
 import Slide055 from './slide_055.js';
-import Slide056 from './slide_056.js';
 
 import "./Slides.css"
 
@@ -117,8 +116,7 @@ export default class App extends Component {
             <Slide052 />,
             <Slide053 />,
             <Slide054 />,
-            <Slide055 />,
-            <Slide056 />
+            <Slide055 />
         ]
     }
 

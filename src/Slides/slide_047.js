@@ -18,11 +18,14 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Topic 5: Getting the most with RMarkdown"
+                    text="Pre-assessment"
                 />
-                <Heading
-                    component="h2"
-                    text="Learning outcomes"
+                <Likert 
+                    count={ 5 }
+                    question={[
+                        `Explain the uses of RMarkdown`,
+                        `Install RMarkdown in RStudio`
+                    ]}
                 />
             </section>
         );

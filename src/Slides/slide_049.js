@@ -18,14 +18,13 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="RMarkdown"
+                    text="Post-assessment"
                 />
-                <Paragraph
-                    text={ `R Markdown offers a single data science authoring platform, integrating your code, its consequences, and your prose commentary. R Markdown papers, including PDFs, Word files, slideshows, and more, are entirely reproducible and accept thousands of output formats.`}
-                />
-                <Code
-                    text={[
-                        `install.packages("rmarkdown");`
+                <Likert 
+                    count={ 5 }
+                    question={[
+                        `Explain the uses of RMarkdown`,
+                        `Install RMarkdown in RStudio`
                     ]}
                 />
             </section>

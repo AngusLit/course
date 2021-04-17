@@ -18,14 +18,23 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Post-assessment"
+                    text="Formative Assessment"
                 />
-                <Likert 
-                    count={ 5 }
-                    question={[
-                        `Explain the uses of RMarkdown`,
-                        `Install RMarkdown in RStudio`
+                <Paragraph
+                    text={[`This assessment will test you ability to:`]}
+                />
+                <List
+                    text={[
+                        `Explain the relevance of R in statistical analysis and data science.`,
+                        `Install R on a Windows computer.`,
+                        `Install RStudio on a Windows computer.`,
+                        `Distinguish between base and distributed R packages.`,
+                        `Install distributed packages on your machine.`,
+                        `Explain the uses of RMarkdown.`
                     ]}
+                />
+                <Timer
+                    time="15"
                 />
             </section>
         );

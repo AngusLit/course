@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
-import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,7 +10,31 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="The global environment"
+                    text="Results"
+                />
+                <Paragraph
+                    text={[
+                        `We'll be able to display our project's results in the Results tab. It is stated that 3 is the variable's value.`,
+                        `To absolutely clean the desktop, click on the broom icon at the top of the screen:`
+                    ]}
+                />
+                <Image
+                    type="center"
+                    source="./Image.png"
+                />
+                <Paragraph
+                    text={[
+                        `To remove selected objects from the workspace, select the Grid view from the dropdown menu:`
+                    ]}
+                />
+                <Image
+                    type="center"
+                    source="./Image.png"
+                />
+                <Paragraph
+                    text={[
+                        `Here we can check the boxes of the objects we’d like to remove and use the broom icon to clear them from our Global Environment.`
+                    ]}
                 />
             </section>
         );

@@ -1,16 +1,8 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
-import Image from "../Comps/Image/Image.js";
-import Likert from "../Comps/Likert/Likert.js";
 import List from "../Comps/List/List.js";
-import MCQ from "../Comps/MCQ/MCQ.js";
-import Outcomes from "../Comps/Outcomes/Outcomes.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Quote from "../Comps/Quote/Quote.js";
-import Timer from "../Comps/Timer/Timer.js";
-import URL from "../Comps/URL/URL.js";
 
 export default class App extends Component {
     render() {
@@ -18,13 +10,24 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Pre-assessment"
+                    text="What are R packages?"
                 />
-                <Likert 
-                    count={ 5 }
-                    question={[
-                        `Distinguish between base and distributed R packages.`,
-                        `Install distributed packages on your machine.`
+                <Paragraph
+                    text={[
+                        "Much of the functionality in R comes from using packages. Packages are shareable collections of code, data, and documentation. Packages are essentially extensions, or add-ons, to the R program that we installed above.",
+                        "There are two main types of packages which can be used for installing and activating features: "
+                    ]}
+                />
+                <List
+                    text={[
+                        "Base packages, and",
+                        "Distributed packages."
+                    ]}
+                />
+                <Paragraph
+                    text={[
+                        "Base packages come with the installation of R, whereas optional packages are available for download after the fact. In other words, these additional packages do not come with the standard installation of R, so you need to install them yourself.",
+                        "In this subtopic, you’ll learn how to use some additional R packages that are useful. For example, the “rmeta” package."
                     ]}
                 />
             </section>

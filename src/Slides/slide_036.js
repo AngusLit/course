@@ -1,8 +1,7 @@
 import { Component } from 'react';
 
 import Heading from "../Comps/Heading/Heading.js";
-import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import URL from "../Comps/URL/URL.js";
+import Likert from "../Comps/Likert/Likert.js";
 
 export default class App extends Component {
     render() {
@@ -10,14 +9,11 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Supplementary reading"
+                    text="Post-assessment"
                 />
-                <Paragraph
-                    text="Detailed information on using RStudio can be found at at RStudio’s Website."
-                />
-                <URL
-                    name="RStudio Education"
-                    hyperlink="https://education.rstudio.com/"
+                <Likert 
+                    count={ 5 }
+                    question="Install RStudio on a Windows computer."
                 />
             </section>
         );

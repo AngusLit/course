@@ -18,7 +18,7 @@ export default class App extends Component {
             <section className="slide">
                 <Heading
                     component="h1"
-                    text="Question 1"
+                    text="Question 2"
                 />
             </section>
         );
