@@ -2,12 +2,18 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
+    
     margin: 16px;
-    padding: 24px;
+    padding: 16px;
     width: auto;
 
-    background: #eeeeee;
+    background: #ffffff;
+
+    color: black;
+}
+
+.timer svg {
+    fill: black;
 }
 
 .timer svg:first-of-type {

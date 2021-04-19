@@ -18,9 +18,11 @@ section.note {
     padding: 16px 36px 24px;
     width: auto;
     
+    color: #282C34;
     line-height: 125%;
 
-    background: #eee;
+    background: #E2ECE9;
+    
 }
 
 section.instruction {
@@ -30,4 +32,5 @@ section.instruction {
     width: fit-content;
 
     background: #FFEEAA;
+    color: #282C34;
 }

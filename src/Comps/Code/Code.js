@@ -21,7 +21,7 @@ export default class Code extends Component {
             <div className={ this.props.type }>
                 { this.props.text.map( ( val, i ) => {
                     return (
-                        <div key={ i }  className={ this.state.animate ? `code__line fade_in` : `code__line` } >
+                        <div key={ i }  className={`code__line` } >
                             <p className="line__number">{ i + 1 }</p>
                             <p className="line__expression">{ val }</p>
                         </div>

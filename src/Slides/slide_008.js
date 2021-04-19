@@ -11,6 +11,7 @@ export default class App extends Component {
                     text="Knowledge check"
                 />
                 <MCQ
+                    index={ window.sessionStorage.getItem( `index` ) }
                     question="During which decade was R developed?"
                     options={[
                         "1970s",

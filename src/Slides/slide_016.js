@@ -11,6 +11,7 @@ export default class App extends Component {
                     text="Knowledge Check"
                 />
                 <MCQ
+                    index={ window.sessionStorage.getItem( `index` ) }
                     question="Which of the following is the URL for R’s official site?"
                     options={[
                         "r-language.org",

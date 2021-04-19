@@ -27,7 +27,8 @@
 }
 
 .mcq__option:hover {
-    background: #ddd;
+    background: #F6F8A4;
+    color: #282C34;
 }
 
 .mcq__option input {
@@ -58,8 +59,9 @@
     padding: 24px;
     width: calc(100% - 80px);
 
-    background: #eeeeee;
+    background: #ffffff;
     
+    color: #282C34;
     font-family: var(--body-font);
 }
 
@@ -71,7 +73,7 @@
     
     background: black;
 
-    color: aliceblue;
+    color: white;
     font-family: var(--body-font);
     text-transform: uppercase;
 

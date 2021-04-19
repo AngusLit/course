@@ -9,8 +9,9 @@
     padding: 16px 24px 24px 18px;
     width: auto;
 
-    background: #eee;
+    background: #E2ECE9;
 
+    color: #282C34;
     font-family: var(--body-font);
     line-height: 125%;
 }
@@ -48,6 +49,7 @@
 .url svg:first-of-type {
     margin-bottom: auto;
     margin-right: 16px;
+    fill: #282C34;
 }
 
 .url a {

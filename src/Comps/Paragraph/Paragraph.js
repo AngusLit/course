@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import "./Paragraph.css";
 
-export default class Heading extends Component {
+export default class Paragraph extends Component {
     
     render( ) {
         let contents

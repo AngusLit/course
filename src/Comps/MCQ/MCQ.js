@@ -56,6 +56,10 @@ export default class MCQ extends Component {
     }
 
     render( ) {
+        if ( window.sessionStorage.getItem( `mcq_${ this.props.index }` ) !== null) {
+            var x = window.sessionStorage.getItem( `mcq_${ this.props.index }` )
+        }
+
         return (
             <div className="mcq">
                 <p className="mcq__question">
@@ -64,12 +68,18 @@ export default class MCQ extends Component {
 
                 <form className="mcq__form">
                     { this.props.options.map( ( val, i ) => {
+                        let y = i;
                         return (
-                            <div key={i} className="mcq__option">
+                            <div
+                                key={i}
+                                className="mcq__option"
+                                onClick={ () => window.sessionStorage.setItem( `mcq_${ this.props.index }`, y ) }
+                            >
                                 <input
                                     id={ `option_${ i }` }
                                     className="mcq__input"
                                     key={ `input_${ i }` }
+                                    defaultChecked={ ( Number( x ) === Number( i ) ) }
                                     name="q"
                                     type="radio"
                                 />

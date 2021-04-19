@@ -8,9 +8,11 @@
     display: flex;
     align-items: center;
     width: 100%;
-    background: #eeeeee;
+    background: #ffffff;
     margin: 16px;
     padding: 24px;
+
+    color: #234532;
 }
 
 .likert__instruction svg {

@@ -9,7 +9,7 @@ export default class TOC extends Component {
                         return (
                             <li
                                 key={ i }
-                                className="toc__tile"
+                                className={ `toc__tile`}
                                 onClick={ () => this.props.setIndex( this.props.indices[ i ] ) }
                             >
                                 <p className="toc__number">

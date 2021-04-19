@@ -11,6 +11,7 @@ export default class App extends Component {
                     text="Knowledge check"
                 />
                 <MCQ
+                    index={ window.sessionStorage.getItem( `index` ) }
                     question="Which of the following does not explain the relevance of R in statistical analysis and data science?"
                     options={[
                         "Widely used in industry.",

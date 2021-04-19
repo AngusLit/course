@@ -25,6 +25,7 @@ export default class Likert extends Component {
             if ( window.sessionStorage.getItem( `likert_${ obj.index }_${i}` ) !== null) {
                 var x = window.sessionStorage.getItem( `likert_${ obj.index }_${i}` )
             }
+            
             var arr = [];
             for ( let j = 1; j <= obj.count; j++ ) {
                 let y = j

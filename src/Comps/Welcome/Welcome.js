@@ -23,7 +23,7 @@ export default class Welcome extends Component {
                     xmlns="http://www.w3.org/2000/svg"
                     enableBackground="new 0 0 24 24"
                     height="48px"
-                    viewBox="0 0 24 24"
+                    viewBox="0 -6 24 36"
                     width="48px"
                     fill="#000000"
                 >
