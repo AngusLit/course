@@ -21,9 +21,14 @@ export default class App extends Component {
                         `result <- 1 + 2`]}
                 />
                 <Paragraph
+                    type="note"
                     text={[
                         `The <- is called the assignment operator. This operator assigns values to variables. The command above is translated into a sentence as:`,
-                        `Create a variable named “result” and assign it the value of 1+2.`,
+                        `Create a variable named “result” and assign it the value of 1+2.`
+                    ]}
+                />
+                <Paragraph
+                    text={[
                         `Here, we have called our significant variable:`
                     ]}
                 />

@@ -37,24 +37,22 @@ export default class Likert extends Component {
                             name={ `${obj.question}_${i}` }
                             id={ j }
                             defaultChecked={ ( Number( x ) === Number( y ) ) ? true : void(0) }
-                            onClick={ () => window.sessionStorage.setItem( `likert_${ obj.index }_${i}`, y )
-                            }
-                        >
-                        </input>
+                            onClick={ () => window.sessionStorage.setItem( `likert_${ obj.index }_${i}`, y ) }
+                        />
                     </div>
                 )
             }
-                    return (
-                        <div className="likert__question">
-                            <p className="likert__text">
-                                { val }
-                            </p>
-                            <div className="likert__options">
-                                { arr }
-                            </div>
+                return (
+                    <div className="likert__question">
+                        <p className="likert__text">
+                            { val }
+                        </p>
+                        <div className="likert__options">
+                            { arr }
                         </div>
-                    )
-                } )
+                    </div>
+                )
+            } )
         return contents
     }
 
@@ -105,18 +103,21 @@ export default class Likert extends Component {
 
         return (
             <form className={ this.state.animate ? `likert fade__in` : `likert`}>
-                <p className="likert__instruction">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="36px"
-                    viewBox="0 0 24 24"
-                    width="36px"
-                    fill="#000000">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
-                </svg>
-                    Rate how well you could perform the below outcomes:
-                </p>
+                <section className="likert__instruction">
+                    <svg
+                        className="likert__icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="36px"
+                        viewBox="-4 -4 32 32"
+                        width="36px"
+                        fill="#000000">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
+                    </svg>
+                    <p>
+                        Rate how well you could perform the below outcomes:
+                    </p>
+                </section>
                 { contents }
             </form>
         );

@@ -25,10 +25,11 @@ export default class MCQ extends Component {
                     this.setState( {
                         feedbackIcon: 
                             <svg
+                                className="mcq__feedback__icon"
                                 xmlns="http://www.w3.org/2000/svg"
-                                height="96px"
+                                height="36px"
                                 viewBox="0 0 24 24"
-                                width="96px"
+                                width="36px"
                                 fill="#A6CA72"
                             >
                                 <path d="M0 0h24v24H0V0z" fill="none"/>
@@ -38,11 +39,12 @@ export default class MCQ extends Component {
                 } else {
                     this.setState( {
                         feedbackIcon: 
-                            <svg
+                            <svg 
+                                className="mcq__feedback__icon"
                                 xmlns="http://www.w3.org/2000/svg"
-                                height="96px"
+                                height="36px"
                                 viewBox="0 0 24 24"
-                                width="96px"
+                                width="36px"
                                 fill="#DD5E56"
                             >
                                 <path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/>

@@ -10,7 +10,7 @@
 
     background: #3D4148;
 
-    color: white;
+    color: #F6F8A4;
     font-family: var(--body-font);
     line-height: 125%;
 }
@@ -42,6 +42,7 @@
     margin-block-end: 0;
     padding: 4px 0;
 
+    color: #FFFFFF;
     line-height: 125%;
 }
 

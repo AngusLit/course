@@ -4,6 +4,7 @@ section.welcome {
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    border-radius: 8px;
     margin: 16px;
     padding: 16px 16px 24px;
     width: auto;
@@ -33,6 +34,6 @@ section.welcome p {
 }
 
 section.welcome p:not(:first-of-type) {
-    margin-left: 64px;
+    margin-left: 52px;
     margin-top: 16px;
 }

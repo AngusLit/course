@@ -3,23 +3,32 @@
     align-items: center;
     flex-wrap: wrap;
     
+    border-radius: 8px;
     margin: 16px;
     padding: 16px;
     width: auto;
 
     background: #3D4148;
 
-    color: white;
+    color: #F6F8A4;
+}
+
+.timer p {
+    width: calc(100% - 84px);
 }
 
 .timer svg {
+    border: 2px solid #F6F8A4;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
     fill: #F6F8A4;
     background: #282C34;
-
-    border: 2px solid #F6F8A4;
-    border-radius: 28px;
 }
 
 .timer svg:first-of-type {
-    margin-right: 32px;
+    margin-right: 0px;
 }

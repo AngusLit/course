@@ -2,7 +2,6 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import TOC from "../Comps/TOC/TOC.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
-import Timer from "../Comps/Timer/Timer.js";
 import Welcome from "../Comps/Welcome/Welcome.js";
 
 export default class App extends Component {
@@ -63,10 +62,6 @@ export default class App extends Component {
                         0,
                         0
                     ]}
-                />
-                <Timer
-                    index={ window.sessionStorage.getItem( `index` ) }
-                    time="90"
                 />
             </section>
         );

@@ -4,7 +4,7 @@ import "./Timer.css"
 export default class Timer extends Component {
     render( ) {
         return (
-            <p className="timer">
+            <section className="timer">
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px" viewBox="-6 -6 36 36" width="48px"
                     fill="#FFFFFF">
                     <g>
@@ -19,8 +19,8 @@ export default class Timer extends Component {
                         </g>
                     </g>
                 </svg>
-                This lesson should take around { this.props.time } minutes to complete.
-            </p>
+                <p>This lesson should take around { this.props.time } minutes to complete.</p>
+            </section>
         );
     }
 }

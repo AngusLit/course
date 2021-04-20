@@ -59,9 +59,9 @@
     padding: 24px;
     width: calc(100% - 80px);
 
-    background: #ffffff;
+    background: #3D4148;
     
-    color: #282C34;
+    color: #FFF;
     font-family: var(--body-font);
 }
 
@@ -79,4 +79,9 @@
 
     border-radius: 4px;
     cursor: pointer;
+}
+
+.mcq__feedback__icon {
+    width: 36px;
+    height: 36px;
 }

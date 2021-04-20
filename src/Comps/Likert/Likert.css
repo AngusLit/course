@@ -7,23 +7,39 @@
 .likert__instruction {
     display: flex;
     align-items: center;
-    width: 100%;
-    background: #F6F8A4;
+    
+    border-radius: 8px;
     margin: 16px;
     padding: 24px;
+    width: 100%;
 
-    color: #234532;
+    background: #3D4148;
+    
+    color: #F6F8A4;
 }
 
-.likert__instruction svg {
-    padding-right: 24px;
+.likert__instruction p {
+    width: calc(100% - 96px);
+}
+
+.likert__icon {
+    border: 2px solid #F6F8A4;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    fill: #F6F8A4;
+    background: #282C34;
 }
 
 .likert__options {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+
     margin: 24px 128px;
+    width: 100%;
 }
 
 
