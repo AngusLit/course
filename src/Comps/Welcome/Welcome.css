@@ -8,17 +8,23 @@ section.welcome {
     padding: 16px 16px 24px;
     width: auto;
 
-    background: #282C34;
+    background: #3D4148;
+
+    color: #eeeeee;
     font-family: var(--body-font);
     line-height: 125%;
 }
 
 section.welcome svg {
-    width: 64px;
-    height: 64px;
+    border: 2px solid #F6F8A4;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+
     border-radius: 50%;
-    fill: #282C34;
-    background: white;
+
+    fill: #F6F8A4;
+    background: #282C34;
 }
 
 section.welcome p {

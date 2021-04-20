@@ -17,4 +17,6 @@
 .line__expression {
     font-family: "Roboto Mono", 'Courier New', Courier, monospace;
     color: white;
+
+    user-select: text;
 }

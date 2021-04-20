@@ -13,7 +13,6 @@ export default class App extends Component {
                     text="The global environment"
                 />
                 <Paragraph
-                    component="h1"
                     text={[
                         `When variables are created in RStudio, they are saved in the R environment.`,
                         `When writing code in R, any variables we define, save in a dataframe, and import and save, are stored in our global environment. We can see the artifacts in the environment at the top right of the RStudio interface in the Environment tab.`,

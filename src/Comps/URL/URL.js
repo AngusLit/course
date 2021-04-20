@@ -32,7 +32,7 @@ export default class URL extends Component {
                 <svg xmlns="http://www.w3.org/2000/svg"
                     enableBackground="new 0 0 20 20"
                     height="48px"
-                    viewBox="0 0 20 20"
+                    viewBox="-4 -4 28 28"
                     width="48px"
                     fill="#000000">
                         <rect fill="none" height="20" width="20"/>

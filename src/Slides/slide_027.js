@@ -12,7 +12,7 @@ export default class App extends Component {
                     text="Installing R"
                 />
                 <Heading
-                    component="h3"
+                    component="h2"
                     text="Step 1"
                 />
                 <Paragraph
@@ -23,7 +23,7 @@ export default class App extends Component {
                     text={`Select "Next".`}
                 />
                 <Heading
-                    component="h3"
+                    component="h2"
                     text="Step 2"
                 />
                 <Paragraph
@@ -34,7 +34,7 @@ export default class App extends Component {
                     text={`Select "Next".`}
                 />
                 <Heading
-                    component="h3"
+                    component="h2"
                     text="Step 3"
                 />
                 <Paragraph
@@ -45,7 +45,7 @@ export default class App extends Component {
                     text={`Select "Install".`}
                 />
                 <Heading
-                    component="h3"
+                    component="h2"
                     text="Step 4"
                 />
                 <Paragraph 
@@ -53,7 +53,7 @@ export default class App extends Component {
                     text={`Wait for the installer to complete.`}
                 />
                 <Heading
-                    component="h3"
+                    component="h2"
                     text="Step 5"
                 />
                 <Paragraph 

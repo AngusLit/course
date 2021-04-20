@@ -42,6 +42,27 @@ export default class App extends Component {
                         37,
                         46
                     ] }
+                    time={[
+                        15,
+                        10,
+                        15,
+                        10,
+                        15
+                    ]}
+                    description={ [
+                        `Greyhound divisively hello coldly wonderfully marginally far upon excluding.`,
+                        `Greyhound divisively hello coldly wonderfully marginally far upon excluding.`,
+                        `Greyhound divisively hello coldly wonderfully marginally far upon excluding.`,
+                        `Greyhound divisively hello coldly wonderfully marginally far upon excluding.`,
+                        `Greyhound divisively hello coldly wonderfully marginally far upon excluding.`
+                    ] }
+                    completion={[
+                        100,
+                        75,
+                        0,
+                        0,
+                        0
+                    ]}
                 />
                 <Timer
                     index={ window.sessionStorage.getItem( `index` ) }

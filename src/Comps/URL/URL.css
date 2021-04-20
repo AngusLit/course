@@ -4,14 +4,13 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    border-left: 3px solid black;
     margin: 16px;
     padding: 16px 24px 24px 18px;
     width: auto;
 
-    background: #E2ECE9;
+    background: #3D4148;
 
-    color: #282C34;
+    color: white;
     font-family: var(--body-font);
     line-height: 125%;
 }
@@ -49,7 +48,11 @@
 .url svg:first-of-type {
     margin-bottom: auto;
     margin-right: 16px;
-    fill: #282C34;
+    fill: #F6F8A4;
+    
+    background: #282C34;
+    border: 2px solid #F6F8A4;
+    border-radius: 28px;
 }
 
 .url a {
@@ -58,7 +61,7 @@
     padding-left: 4px;
     width: fit-content;
 
-    color: #0088FF;
+    color: #55CCFF;
     text-decoration: none;
     overflow-wrap: anywhere;
 }

@@ -7,13 +7,17 @@
     padding: 16px;
     width: auto;
 
-    background: #ffffff;
+    background: #3D4148;
 
-    color: black;
+    color: white;
 }
 
 .timer svg {
-    fill: black;
+    fill: #F6F8A4;
+    background: #282C34;
+
+    border: 2px solid #F6F8A4;
+    border-radius: 28px;
 }
 
 .timer svg:first-of-type {

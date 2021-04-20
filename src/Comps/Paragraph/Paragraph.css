@@ -13,16 +13,14 @@ section.note::before {
 }
 
 section.note {
-    border-left: 3px solid black;
     margin: 16px;
     padding: 16px 36px 24px;
     width: auto;
     
-    color: #282C34;
+    color: #FFFFFF;
     line-height: 125%;
 
-    background: #E2ECE9;
-    
+    background: #3D4148;
 }
 
 section.instruction {
