@@ -3,11 +3,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text={`Why learn R?`}
@@ -34,7 +35,7 @@ export default class App extends Component {
                     style={{width: "128px", display: "block", margin: "auto"}}
                     source="./r-logo.svg"
                 />
-            </section>
+            </Slide>
         );
     }
 }

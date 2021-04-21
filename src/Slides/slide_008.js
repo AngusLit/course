@@ -1,11 +1,12 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import MCQ from "../Comps/MCQ/MCQ.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Knowledge check"
@@ -22,7 +23,7 @@ export default class App extends Component {
                     correct={ 2 }
                     feedback={`R was developed in 1991 by Ross Ihaka.`}
                 />
-            </section>
+            </Slide>
         );
     }
 }

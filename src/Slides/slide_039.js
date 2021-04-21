@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="What are R packages?"
@@ -30,7 +31,7 @@ export default class App extends Component {
                         "In this subtopic, you’ll learn how to use some additional R packages that are useful. For example, the “rmeta” package."
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

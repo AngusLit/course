@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Pre-flight Checklist"
@@ -33,7 +34,7 @@ export default class App extends Component {
                 <Paragraph
                     text="Updating R periodically is a good idea to ensure that you have an updated version of R. (to ensure compatibility with all the latest versions of the R packages that you have downloaded)."
                 />
-            </section>
+            </Slide>
         );
     }
 }

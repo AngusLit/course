@@ -1,11 +1,12 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import MCQ from "../Comps/MCQ/MCQ.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Knowledge Check"
@@ -22,7 +23,7 @@ export default class App extends Component {
                     correct={ 1 }
                     feedback={`r-project.org is R’s official site. Remembering may be helpful if you have to install R on a machine in future.`}
                 />
-            </section>
+            </Slide>
         );
     }
 }

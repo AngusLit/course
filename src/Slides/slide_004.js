@@ -4,11 +4,12 @@ import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
 import Quote from "../Comps/Quote/Quote.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Why learn R?"
@@ -39,7 +40,7 @@ export default class App extends Component {
                     name="Vance, A. 2009. Data Analysts Captivated by R’s Power. New York Times. Accessed: 2021/04/11. Available at: "
                     hyperlink="https://www.nytimes.com/2009/01/07/technology/business-computing/07program.html"
                 />
-            </section>
+            </Slide>
         );
     }
 }

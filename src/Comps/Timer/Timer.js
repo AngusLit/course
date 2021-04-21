@@ -5,8 +5,14 @@ export default class Timer extends Component {
     render( ) {
         return (
             <section className="timer">
-                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px" viewBox="-6 -6 36 36" width="48px"
-                    fill="#FFFFFF">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    enableBackground="new 0 0 24 24"
+                    height="48px"
+                    viewBox="-6 -6 36 36"
+                    width="48px"
+                    fill="#FFFFFF"
+                >
                     <g>
                         <rect fill="none" height="24" width="24" />
                     </g>

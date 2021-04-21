@@ -1,11 +1,12 @@
 import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
 	render() {
 		return (
-			<section className="slide">
+			<Slide>
                 <Heading
                     component="h1"
                     text="Pre-flight Checklist"
@@ -23,7 +24,7 @@ export default class App extends Component {
                 <Paragraph
                     text="Beyond “the latest release,” it will say something like “R-2.12.1.tar.gz”, implying the version number. The new release of R is [X.X.X] . (for example, 2.12.1)."
                 />
-			</section>
+			</Slide>
 		);
 	}
 }

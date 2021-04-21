@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Downloading R for Windows"
@@ -86,7 +87,7 @@ export default class App extends Component {
                 <Paragraph
                     text="Next, we’ll install R and RGui."
                 />
-            </section>
+            </Slide>
         );
     }
 }

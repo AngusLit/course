@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Results"
@@ -36,7 +37,7 @@ export default class App extends Component {
                         `Here we can check the boxes of the objects we’d like to remove and use the broom icon to clear them from our Global Environment.`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

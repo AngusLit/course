@@ -3,11 +3,25 @@ import Heading from "../Comps/Heading/Heading.js";
 import TOC from "../Comps/TOC/TOC.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import Welcome from "../Comps/Welcome/Welcome.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
+    constructor( ) {
+        super( );
+        this.state = {
+            visited: false,
+        }
+    }
+
+    componentDidMount() {
+        this.setState( {
+            visited: true,
+        } )
+    }
+
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     index={ window.sessionStorage.getItem( `index` ) }
                     component="h1"
@@ -63,7 +77,7 @@ export default class App extends Component {
                         0
                     ]}
                 />
-            </section>
+            </Slide>
         );
     };
 };

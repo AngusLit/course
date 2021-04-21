@@ -4,11 +4,12 @@ import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="The console"
@@ -44,7 +45,7 @@ export default class App extends Component {
                     type="center"
                     source="./Image.png"
                 />
-            </section>
+            </Slide>
         );
     }
 }

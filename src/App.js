@@ -16,7 +16,6 @@ export default class App extends Component {
         min: 0,
         max: 0,
         visited: [],
-        checkpoints: []
     }
 
     setCheckpoint( val ) {
@@ -79,7 +78,6 @@ export default class App extends Component {
                                 }
                                 if ( this.state.visited.includes( this.state.index ) === false ) {
                                     this.setState( { visited: [ ...this.state.visited, this.state.index ] } );
-                                    console.log( this.state.visited )
                                 }
                             }
                         }
@@ -102,7 +100,6 @@ export default class App extends Component {
                                 }
                                 if ( this.state.visited.includes( this.state.index ) === false ) {
                                     this.setState( { visited: [ ...this.state.visited, this.state.index ] } );
-                                    console.log( this.state.visited )
                                 }
                             }
                         }

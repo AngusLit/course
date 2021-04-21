@@ -3,11 +3,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import Image from "../Comps/Image/Image.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
 	render() {
 		return (
-			<section className="slide">
+			<Slide>
                 <Heading
                     component="h1"
                     text="History"
@@ -29,7 +30,7 @@ export default class App extends Component {
                     name="Ross Ihaka and Robert Gentleman. R: A language for data analysis and graphics. Journal of Computational and Graphical Statistics, 5(3):299–314, 1996. Available at: "
                     hyperlink="https://www.jstor.org/stable/1390807?seq=1"
                 />
-			</section>
+			</Slide>
 		);
 	}
 }

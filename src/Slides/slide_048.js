@@ -5,11 +5,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="RMarkdown"
@@ -50,7 +51,7 @@ export default class App extends Component {
                         `A variety of R packages and external software combine with R Markdown. That implies that support is not possible, by-and-large, through? Instead, keep these tools close to hand while you move through this part, and use R Markdown in the future:`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

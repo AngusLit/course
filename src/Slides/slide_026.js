@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Why Install RStudio?"
@@ -23,7 +24,7 @@ export default class App extends Component {
                     name="RStudio"
                     hyperlink="https://www.rstudio.com/products/rstudio/download/#download"
                 />
-            </section>
+            </Slide>
         );
     }
 }

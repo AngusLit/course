@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Verifying your installation"
@@ -35,7 +36,7 @@ export default class App extends Component {
                         `library("rmeta")`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

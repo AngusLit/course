@@ -1,14 +1,14 @@
 import { Component } from 'react';
 
-import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="What is the tidyverse package?"
@@ -33,7 +33,7 @@ export default class App extends Component {
                         `forcats: for working with factors (categorical data).`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

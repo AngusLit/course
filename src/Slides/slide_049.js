@@ -2,11 +2,12 @@ import { Component } from 'react';
 
 import Heading from "../Comps/Heading/Heading.js";
 import Likert from "../Comps/Likert/Likert.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide checkpoint={true}>
                 <Heading
                     component="h1"
                     text="Post-assessment"
@@ -19,7 +20,7 @@ export default class App extends Component {
                         `Install RMarkdown in RStudio`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

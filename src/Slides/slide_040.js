@@ -5,11 +5,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Installing R packages"
@@ -76,7 +77,7 @@ export default class App extends Component {
                     type="center"
                     source="./Image.png"
                 />
-            </section>
+            </Slide>
         );
     }
 }

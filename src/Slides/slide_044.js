@@ -3,11 +3,12 @@ import { Component } from 'react';
 import Code from "../Comps/Code/Code.js";
 import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Installing tidyverse"
@@ -23,7 +24,7 @@ export default class App extends Component {
                 <Paragraph
                     text={`The install.packages() command only needs to be used to download and install packages for the first time.`}
                 />
-            </section>
+            </Slide>
         );
     }
 }

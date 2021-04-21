@@ -2,11 +2,12 @@ import { Component } from 'react';
 
 import Heading from "../Comps/Heading/Heading.js";
 import Outcomes from "../Comps/Outcomes/Outcomes.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Topic 5: Getting the most with RMarkdown"
@@ -21,7 +22,7 @@ export default class App extends Component {
                         `Install RMarkdown in RStudio`
                     ]}
                 />
-            </section>
+            </Slide>
         );
     }
 }

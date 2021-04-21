@@ -21,7 +21,7 @@ export default class Welcome extends Component {
             <section className="welcome">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    enable-background="new 0 0 20 20"
+                    enableBackground="new 0 0 20 20"
                     height="36px"
                     viewBox="-4 -4 28 28"
                     width="36px"

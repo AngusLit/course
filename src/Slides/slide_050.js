@@ -4,11 +4,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import List from "../Comps/List/List.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import Timer from "../Comps/Timer/Timer.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Formative Assessment"
@@ -29,7 +30,7 @@ export default class App extends Component {
                 <Timer
                     time="15"
                 />
-            </section>
+            </Slide>
         );
     }
 }

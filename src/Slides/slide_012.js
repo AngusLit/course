@@ -3,11 +3,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import Quote from "../Comps/Quote/Quote.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
 	render() {
 		return (
-			<section className="slide">
+			<Slide>
                 <Heading
                     component="h1"
                     text="What to Expect"
@@ -33,7 +34,7 @@ export default class App extends Component {
                     name="Cook, J. D. R language for programmers. John D. Cook Consulting. Accessed: 2021/04/11. Available at:"
                     hyperlink="https://www.johndcook.com/blog/r_language_for_programmers/"
                 />
-			</section>
+			</Slide>
 		);
 	}
 }

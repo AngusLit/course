@@ -4,11 +4,12 @@ import Heading from "../Comps/Heading/Heading.js";
 import Image from "../Comps/Image/Image.js";
 import Paragraph from "../Comps/Paragraph/Paragraph.js";
 import URL from "../Comps/URL/URL.js";
+import Slide from "../Comps/Slide/Slide.js";
 
 export default class App extends Component {
     render() {
         return (
-            <section className="slide">
+            <Slide>
                 <Heading
                     component="h1"
                     text="Reflection"
@@ -28,7 +29,7 @@ export default class App extends Component {
                     name="R for Windows FAQ"
                     hyperlink="https://cran.r-project.org/bin/windows/base/rw-FAQ.html"
                 />
-            </section>
+            </Slide>
         );
     }
 }
