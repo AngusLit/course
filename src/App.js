@@ -8,16 +8,26 @@ export default class App extends Component {
         super( );
         this.setMax = this.setMax.bind( this );
         this.setIndex = this.setIndex.bind( this );
+        this.setCheckpoint = this.setCheckpoint.bind( this );
     }
 
     state = {
         index: 0,
         min: 0,
-        max: 0
+        max: 0,
+        visited: [],
+        checkpoints: []
+    }
+
+    setCheckpoint( val ) {
+        this.setState( {checkpoints: val } )
     }
 
     setIndex ( val ) {
         this.setState( { index: val } )
+        if ( this.state.visited.includes( val ) === false ) {
+            this.setState( { visited: [ ...this.state.visited, val ] } );
+        }
     }
 
     setMax ( val ) {
@@ -67,6 +77,10 @@ export default class App extends Component {
                                         index: this.state.index - 1
                                     })
                                 }
+                                if ( this.state.visited.includes( this.state.index ) === false ) {
+                                    this.setState( { visited: [ ...this.state.visited, this.state.index ] } );
+                                    console.log( this.state.visited )
+                                }
                             }
                         }
                     >
@@ -85,6 +99,10 @@ export default class App extends Component {
                                     this.setState( {
                                         index: this.state.index + 1
                                     } )
+                                }
+                                if ( this.state.visited.includes( this.state.index ) === false ) {
+                                    this.setState( { visited: [ ...this.state.visited, this.state.index ] } );
+                                    console.log( this.state.visited )
                                 }
                             }
                         }

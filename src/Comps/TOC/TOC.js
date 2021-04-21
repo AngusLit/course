@@ -19,14 +19,6 @@ export default class TOC extends Component {
                                     { this.props.text[ i ] }
                                 </p>
 
-                                <p className="toc__completion">
-                                    { this.props.completion[  i ] }%
-                                </p>
-
-                                <p className="toc__description">
-                                    { this.props.description[ i ] }
-                                </p>
-
                                 <p className="toc__time">
                                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px">
                                         <g>
@@ -44,11 +36,21 @@ export default class TOC extends Component {
                                     ±{ this.props.time[ i ] } min
                                 </p>
 
+                                <p className="toc__completion">
+                                    { this.props.completion[  i ] }%
+                                </p>
+
+                                <p className="toc__description">
+                                    { this.props.description[ i ] }
+                                </p>
+
+
+
                                 <p
                                     className="toc__launch"
                                     onClick={ ( ) => this.props.setIndex( this.props.indices[ i ] ) }
                                 >
-                                    LAUNCH
+                                    START
                                 </p>
                             </li>
                         )

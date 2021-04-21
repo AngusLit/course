@@ -61,7 +61,7 @@ import "./Slides.css"
 export default class App extends Component {
     state={
         contents: [
-            <Slide000 setIndex={ this.props.setIndex }/>,
+            <Slide000 setIndex={ this.props.setIndex } setCheckpoint={ this.props.setCheckpoint }/>,
             <Slide001 />,
             <Slide002 />,
             <Slide003 />,
