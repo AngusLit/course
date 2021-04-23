@@ -1,0 +1,68 @@
+.slide {
+    display: grid;
+    grid-template-rows: 42px 1fr 21px;
+    grid-template-columns: 1fr 592px 1fr;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 0;
+    margin: 8px;
+    padding: 8px;
+    height: 42px;
+    width: 42px;
+  
+    background: #282C34;
+    border: 2px solid #F6F8A4;
+    border-radius: 50%;
+  
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+    
+    fill: #F6F8A4;
+}
+
+.nav-bar--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+    height: 44x;
+    width: 100%;
+
+    background: #282C34;
+}
+
+.app-nav__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #F6F8A4;
+    margin: 8px;
+    padding: 8px;
+    height: 42px;
+    width: 42px;
+    
+    color: #F6F8A4;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  
+    background: #282C34;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: #F6F8A4;
+}
+
+.home-button:hover,  .app-nav__button:hover{
+    fill: #282C34;
+    background: #F6F8A4;
+    transition: all .2s;
+}
